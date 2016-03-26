@@ -10,7 +10,9 @@ var json = [
     {
       "nodeTo":"393",
       "data" :{
+          "nodeToName":'Son of bhrama',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["1", "393"],
@@ -27,7 +29,9 @@ var json = [
     {
       "nodeTo":"2",
       "data" :{
+          "nodeToName":'Atri',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "2"],
@@ -36,7 +40,9 @@ var json = [
     {
       "nodeTo":"3",
       "data" :{
+          "nodeToName":'Pulatsya',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "3"],
@@ -45,7 +51,9 @@ var json = [
     {
       "nodeTo":"4",
       "data" :{
+          "nodeToName":'Kratu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "4"],
@@ -54,7 +62,9 @@ var json = [
     {
       "nodeTo":"5",
       "data" :{
+          "nodeToName":'pulah',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "5"],
@@ -63,7 +73,9 @@ var json = [
     {
       "nodeTo":"6",
       "data" :{
+          "nodeToName":'angira',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "6"],
@@ -72,7 +84,9 @@ var json = [
     {
       "nodeTo":"7",
       "data" :{
+          "nodeToName":'marichi',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "7"],
@@ -81,7 +95,9 @@ var json = [
     {
       "nodeTo":"8",
       "data" :{
+          "nodeToName":'daksh',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "8"],
@@ -90,7 +106,9 @@ var json = [
     {
       "nodeTo":"10",
       "data" :{
+          "nodeToName":'dharm',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "10"],
@@ -99,7 +117,9 @@ var json = [
     {
       "nodeTo":"11",
       "data" :{
+          "nodeToName":'bhrugu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "11"],
@@ -108,7 +128,9 @@ var json = [
     {
       "nodeTo":"13",
       "data" :{
+          "nodeToName":'Dhata',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "13"],
@@ -117,7 +139,9 @@ var json = [
     {
       "nodeTo":"14",
       "data" :{
+          "nodeToName":'Vidhat',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "14"],
@@ -126,7 +150,9 @@ var json = [
     {
       "nodeTo":"15",
       "data" :{
+          "nodeToName":'Lakshmi',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "15"],
@@ -135,7 +161,9 @@ var json = [
     {
       "nodeTo":"23",
       "data" :{
+          "nodeToName":'Sthanu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "23"],
@@ -144,7 +172,9 @@ var json = [
     {
       "nodeTo":"370",
       "data" :{
+          "nodeToName":'Vasishtha',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "370"],
@@ -153,7 +183,9 @@ var json = [
     {
       "nodeTo":"380",
       "data" :{
+          "nodeToName":'Narad',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "380"],
@@ -162,7 +194,9 @@ var json = [
     {
       "nodeTo":"382",
       "data" :{
+          "nodeToName":'Kardama',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["393", "382"],
@@ -179,7 +213,9 @@ var json = [
     {
       "nodeTo":"9",
       "data" :{
+          "nodeToName":'Soma',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["2", "9"],
@@ -188,7 +224,9 @@ var json = [
     {
       "nodeTo":"357",
       "data" :{
+          "nodeToName":'Durvasa',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["2", "357"],
@@ -197,7 +235,9 @@ var json = [
     {
       "nodeTo":"275",
       "data" :{
+          "nodeToName":'Dattatrey',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["2", "275"],
@@ -238,7 +278,9 @@ var json = [
     {
       "nodeTo":"379",
       "data" :{
+          "nodeToName":'Agatsya',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["3", "379"],
@@ -247,7 +289,9 @@ var json = [
     {
       "nodeTo":"385",
       "data" :{
+          "nodeToName":'Visravas',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["3", "385"],
@@ -264,7 +308,9 @@ var json = [
     {
       "nodeTo":"384",
       "data" :{
+            "nodeToName":'Lopamudra',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -278,7 +324,9 @@ var json = [
     {
       "nodeTo":"386",
       "data" :{
+          "nodeToName":'Vibhishan',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["385", "386"],
@@ -287,7 +335,9 @@ var json = [
     {
       "nodeTo":"387",
       "data" :{
+          "nodeToName":'kuber',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["385", "387"],
@@ -296,7 +346,9 @@ var json = [
     {
       "nodeTo":"388",
       "data" :{
+          "nodeToName":'Ravan',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["385", "388"],
@@ -305,7 +357,9 @@ var json = [
     {
       "nodeTo":"389",
       "data" :{
+          "nodeToName":'Kumnhakarna',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["385", "389"],
@@ -314,7 +368,9 @@ var json = [
     {
       "nodeTo":"390",
       "data" :{
+          "nodeToName":'Surpankha',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["385", "390"],
@@ -323,13 +379,17 @@ var json = [
     {
       "nodeTo":"391",
       "data" :{
+            "nodeToName":'iLavida',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"392",
       "data" :{
+            "nodeToName":'Kaikeshi',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -383,7 +443,9 @@ var json = [
     {
       "nodeTo":"16",
       "data" :{
+          "nodeToName":'Balkhilya',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["4", "16"],
@@ -416,7 +478,9 @@ var json = [
     {
       "nodeTo":"321",
       "data" :{
+          "nodeToName":'Sister of bruhaspati',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["6", "321"],
@@ -425,7 +489,9 @@ var json = [
     {
       "nodeTo":"17",
       "data" :{
+          "nodeToName":'Bruhaspati',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["6", "17"],
@@ -434,7 +500,9 @@ var json = [
     {
       "nodeTo":"18",
       "data" :{
+          "nodeToName":'Utathya',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["6", "18"],
@@ -443,7 +511,9 @@ var json = [
     {
       "nodeTo":"19",
       "data" :{
+          "nodeToName":'Samavarta',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["6", "19"],
@@ -460,7 +530,9 @@ var json = [
     {
       "nodeTo":"322",
       "data" :{
+          "nodeToName":'Vishvakarma',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["321", "322"],
@@ -469,7 +541,9 @@ var json = [
     {
       "nodeTo":"283",
       "data" :{
+            "nodeToName":'Prabhas',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -491,7 +565,9 @@ var json = [
     {
       "nodeTo":"297",
       "data" :{
+          "nodeToName":'Kach',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["17", "297"],
@@ -532,7 +608,9 @@ var json = [
     {
       "nodeTo":"20",
       "data" :{
+          "nodeToName":'kashyap',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["7", "20"],
@@ -549,7 +627,9 @@ var json = [
     {
       "nodeTo":"142",
       "data" :{
+          "nodeToName":'"Urukarma(Vishnu,Vaman)"',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["20", "142"],
@@ -574,7 +654,9 @@ var json = [
     {
       "nodeTo":"400",
       "data" :{
+          "nodeToName":'Daugher of Daksh',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "400"],
@@ -583,7 +665,9 @@ var json = [
     {
       "nodeTo":"307",
       "data" :{
+          "nodeToName":'Kirti',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "307"],
@@ -592,7 +676,9 @@ var json = [
     {
       "nodeTo":"308",
       "data" :{
+          "nodeToName":'Lakshmi',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "308"],
@@ -601,7 +687,9 @@ var json = [
     {
       "nodeTo":"309",
       "data" :{
+          "nodeToName":'Dhruti',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "309"],
@@ -610,7 +698,9 @@ var json = [
     {
       "nodeTo":"310",
       "data" :{
+          "nodeToName":'Medha',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "310"],
@@ -619,7 +709,9 @@ var json = [
     {
       "nodeTo":"311",
       "data" :{
+          "nodeToName":'Pushti',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "311"],
@@ -628,7 +720,9 @@ var json = [
     {
       "nodeTo":"312",
       "data" :{
+          "nodeToName":'Shraddha',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "312"],
@@ -637,7 +731,9 @@ var json = [
     {
       "nodeTo":"313",
       "data" :{
+          "nodeToName":'Kriya',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "313"],
@@ -646,7 +742,9 @@ var json = [
     {
       "nodeTo":"314",
       "data" :{
+          "nodeToName":'Buddhi',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "314"],
@@ -655,7 +753,9 @@ var json = [
     {
       "nodeTo":"315",
       "data" :{
+          "nodeToName":'Lajja',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "315"],
@@ -664,7 +764,9 @@ var json = [
     {
       "nodeTo":"316",
       "data" :{
+          "nodeToName":'Mati',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "316"],
@@ -673,7 +775,9 @@ var json = [
     {
       "nodeTo":"21",
       "data" :{
+          "nodeToName":'Prachetas Daksh',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "21"],
@@ -682,7 +786,9 @@ var json = [
     {
       "nodeTo":"37",
       "data" :{
+          "nodeToName":'vinata',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "37"],
@@ -691,7 +797,9 @@ var json = [
     {
       "nodeTo":"38",
       "data" :{
+          "nodeToName":'kadru',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "38"],
@@ -700,7 +808,9 @@ var json = [
     {
       "nodeTo":"39",
       "data" :{
+          "nodeToName":'kala',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "39"],
@@ -709,7 +819,9 @@ var json = [
     {
       "nodeTo":"40",
       "data" :{
+          "nodeToName":'danayu',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "40"],
@@ -718,7 +830,9 @@ var json = [
     {
       "nodeTo":"41",
       "data" :{
+          "nodeToName":'diti',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "41"],
@@ -727,7 +841,9 @@ var json = [
     {
       "nodeTo":"42",
       "data" :{
+          "nodeToName":'vishva',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "42"],
@@ -736,7 +852,9 @@ var json = [
     {
       "nodeTo":"43",
       "data" :{
+          "nodeToName":'kapila',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "43"],
@@ -745,7 +863,9 @@ var json = [
     {
       "nodeTo":"44",
       "data" :{
+          "nodeToName":'sinhika',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "44"],
@@ -754,7 +874,9 @@ var json = [
     {
       "nodeTo":"45",
       "data" :{
+          "nodeToName":'pradha',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "45"],
@@ -763,7 +885,9 @@ var json = [
     {
       "nodeTo":"46",
       "data" :{
+          "nodeToName":'muni',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "46"],
@@ -772,7 +896,9 @@ var json = [
     {
       "nodeTo":"47",
       "data" :{
+          "nodeToName":'krodha',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "47"],
@@ -781,7 +907,9 @@ var json = [
     {
       "nodeTo":"48",
       "data" :{
+          "nodeToName":'danu',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "48"],
@@ -790,7 +918,9 @@ var json = [
     {
       "nodeTo":"49",
       "data" :{
+          "nodeToName":'tamra',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "49"],
@@ -799,7 +929,9 @@ var json = [
     {
       "nodeTo":"50",
       "data" :{
+          "nodeToName":'aditi',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["8", "50"],
@@ -824,7 +956,9 @@ var json = [
     {
       "nodeTo":"10",
       "data" :{
+            "nodeToName":'dharm',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -838,7 +972,9 @@ var json = [
     {
       "nodeTo":"10",
       "data" :{
+            "nodeToName":'dharm',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -852,7 +988,9 @@ var json = [
     {
       "nodeTo":"10",
       "data" :{
+            "nodeToName":'dharm',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -866,7 +1004,9 @@ var json = [
     {
       "nodeTo":"10",
       "data" :{
+            "nodeToName":'dharm',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -880,7 +1020,9 @@ var json = [
     {
       "nodeTo":"10",
       "data" :{
+            "nodeToName":'dharm',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -894,7 +1036,9 @@ var json = [
     {
       "nodeTo":"10",
       "data" :{
+            "nodeToName":'dharm',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -908,7 +1052,9 @@ var json = [
     {
       "nodeTo":"10",
       "data" :{
+            "nodeToName":'dharm',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -922,7 +1068,9 @@ var json = [
     {
       "nodeTo":"10",
       "data" :{
+            "nodeToName":'dharm',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -936,7 +1084,9 @@ var json = [
     {
       "nodeTo":"10",
       "data" :{
+            "nodeToName":'dharm',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -950,7 +1100,9 @@ var json = [
     {
       "nodeTo":"10",
       "data" :{
+            "nodeToName":'dharm',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -972,7 +1124,9 @@ var json = [
     {
       "nodeTo":"51",
       "data" :{
+          "nodeToName":'garud',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["37", "51"],
@@ -981,7 +1135,9 @@ var json = [
     {
       "nodeTo":"52",
       "data" :{
+          "nodeToName":'arun',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["37", "52"],
@@ -1006,7 +1162,9 @@ var json = [
     {
       "nodeTo":"53",
       "data" :{
+          "nodeToName":'sampati',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["52", "53"],
@@ -1015,7 +1173,9 @@ var json = [
     {
       "nodeTo":"54",
       "data" :{
+          "nodeToName":'jatayu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["52", "54"],
@@ -1048,7 +1208,9 @@ var json = [
     {
       "nodeTo":"55",
       "data" :{
+          "nodeToName":'sheshnag',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["38", "55"],
@@ -1057,7 +1219,9 @@ var json = [
     {
       "nodeTo":"56",
       "data" :{
+          "nodeToName":'vasuki',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["38", "56"],
@@ -1066,7 +1230,9 @@ var json = [
     {
       "nodeTo":"57",
       "data" :{
+          "nodeToName":'takshak',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["38", "57"],
@@ -1075,7 +1241,9 @@ var json = [
     {
       "nodeTo":"58",
       "data" :{
+          "nodeToName":'jartkaru',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["38", "58"],
@@ -1084,7 +1252,9 @@ var json = [
     {
       "nodeTo":"60",
       "data" :{
+          "nodeToName":'anant',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["38", "60"],
@@ -1093,7 +1263,9 @@ var json = [
     {
       "nodeTo":"61",
       "data" :{
+          "nodeToName":'bhujangarm',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["38", "61"],
@@ -1102,7 +1274,9 @@ var json = [
     {
       "nodeTo":"62",
       "data" :{
+          "nodeToName":'kurm',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["38", "62"],
@@ -1111,7 +1285,9 @@ var json = [
     {
       "nodeTo":"63",
       "data" :{
+          "nodeToName":'kulik',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["38", "63"],
@@ -1152,7 +1328,9 @@ var json = [
     {
       "nodeTo":"59",
       "data" :{
+          "nodeToName":'aastik',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["58", "59"],
@@ -1209,7 +1387,9 @@ var json = [
     {
       "nodeTo":"398",
       "data" :{
+          "nodeToName":'Daugher of Kala',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["39", "398"],
@@ -1218,7 +1398,9 @@ var json = [
     {
       "nodeTo":"64",
       "data" :{
+          "nodeToName":'vinashan',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["39", "64"],
@@ -1227,7 +1409,9 @@ var json = [
     {
       "nodeTo":"65",
       "data" :{
+          "nodeToName":'krodh',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["39", "65"],
@@ -1236,7 +1420,9 @@ var json = [
     {
       "nodeTo":"66",
       "data" :{
+          "nodeToName":'krodhhanta',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["39", "66"],
@@ -1245,7 +1431,9 @@ var json = [
     {
       "nodeTo":"67",
       "data" :{
+          "nodeToName":'krodhshatru',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["39", "67"],
@@ -1254,7 +1442,9 @@ var json = [
     {
       "nodeTo":"68",
       "data" :{
+          "nodeToName":'kalkey',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["39", "68"],
@@ -1263,7 +1453,9 @@ var json = [
     {
       "nodeTo":"69",
       "data" :{
+          "nodeToName":'kalnemi',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["39", "69"],
@@ -1336,7 +1528,9 @@ var json = [
     {
       "nodeTo":"71",
       "data" :{
+          "nodeToName":'vikshar',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["40", "71"],
@@ -1345,7 +1539,9 @@ var json = [
     {
       "nodeTo":"72",
       "data" :{
+          "nodeToName":'bal',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["40", "72"],
@@ -1354,7 +1550,9 @@ var json = [
     {
       "nodeTo":"73",
       "data" :{
+          "nodeToName":'vir',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["40", "73"],
@@ -1363,7 +1561,9 @@ var json = [
     {
       "nodeTo":"74",
       "data" :{
+          "nodeToName":'Vrutrasur',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["40", "74"],
@@ -1412,7 +1612,9 @@ var json = [
     {
       "nodeTo":"75",
       "data" :{
+          "nodeToName":'Hiranya Kashyapu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["41", "75"],
@@ -1429,7 +1631,9 @@ var json = [
     {
       "nodeTo":"76",
       "data" :{
+          "nodeToName":'Prahalad',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["75", "76"],
@@ -1438,7 +1642,9 @@ var json = [
     {
       "nodeTo":"82",
       "data" :{
+          "nodeToName":'sumhalad',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["75", "82"],
@@ -1447,7 +1653,9 @@ var json = [
     {
       "nodeTo":"83",
       "data" :{
+          "nodeToName":'anuhalad',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["75", "83"],
@@ -1456,7 +1664,9 @@ var json = [
     {
       "nodeTo":"84",
       "data" :{
+          "nodeToName":'shibi',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["75", "84"],
@@ -1465,7 +1675,9 @@ var json = [
     {
       "nodeTo":"85",
       "data" :{
+          "nodeToName":'bashkal',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["75", "85"],
@@ -1482,7 +1694,9 @@ var json = [
     {
       "nodeTo":"77",
       "data" :{
+          "nodeToName":'Virochan',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["76", "77"],
@@ -1491,7 +1705,9 @@ var json = [
     {
       "nodeTo":"80",
       "data" :{
+          "nodeToName":'kumbha',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["76", "80"],
@@ -1500,7 +1716,9 @@ var json = [
     {
       "nodeTo":"81",
       "data" :{
+          "nodeToName":'nikumbha',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["76", "81"],
@@ -1517,7 +1735,9 @@ var json = [
     {
       "nodeTo":"78",
       "data" :{
+          "nodeToName":'Bali',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["77", "78"],
@@ -1534,7 +1754,9 @@ var json = [
     {
       "nodeTo":"79",
       "data" :{
+          "nodeToName":'Banasur',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["78", "79"],
@@ -1623,7 +1845,9 @@ var json = [
     {
       "nodeTo":"91",
       "data" :{
+          "nodeToName":'rahu',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["44", "91"],
@@ -1648,7 +1872,9 @@ var json = [
     {
       "nodeTo":"100",
       "data" :{
+          "nodeToName":'Tillotama',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "100"],
@@ -1657,7 +1883,9 @@ var json = [
     {
       "nodeTo":"101",
       "data" :{
+          "nodeToName":'Aruna',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "101"],
@@ -1666,7 +1894,9 @@ var json = [
     {
       "nodeTo":"102",
       "data" :{
+          "nodeToName":'Rakshita',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "102"],
@@ -1675,7 +1905,9 @@ var json = [
     {
       "nodeTo":"103",
       "data" :{
+          "nodeToName":'Rambha',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "103"],
@@ -1684,7 +1916,9 @@ var json = [
     {
       "nodeTo":"104",
       "data" :{
+          "nodeToName":'Manorama',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "104"],
@@ -1693,7 +1927,9 @@ var json = [
     {
       "nodeTo":"105",
       "data" :{
+          "nodeToName":'Keshini',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "105"],
@@ -1702,7 +1938,9 @@ var json = [
     {
       "nodeTo":"106",
       "data" :{
+          "nodeToName":'Subahu',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "106"],
@@ -1711,7 +1949,9 @@ var json = [
     {
       "nodeTo":"107",
       "data" :{
+          "nodeToName":'Suraja',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "107"],
@@ -1720,7 +1960,9 @@ var json = [
     {
       "nodeTo":"108",
       "data" :{
+          "nodeToName":'Supriya',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "108"],
@@ -1729,7 +1971,9 @@ var json = [
     {
       "nodeTo":"109",
       "data" :{
+          "nodeToName":'Atibahu',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "109"],
@@ -1738,7 +1982,9 @@ var json = [
     {
       "nodeTo":"110",
       "data" :{
+          "nodeToName":'Haha',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "110"],
@@ -1747,7 +1993,9 @@ var json = [
     {
       "nodeTo":"111",
       "data" :{
+          "nodeToName":'HuHu',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "111"],
@@ -1756,7 +2004,9 @@ var json = [
     {
       "nodeTo":"112",
       "data" :{
+          "nodeToName":'Tumburu',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "112"],
@@ -1765,7 +2015,9 @@ var json = [
     {
       "nodeTo":"395",
       "data" :{
+          "nodeToName":'Daughter of Pradha',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "395"],
@@ -1774,7 +2026,9 @@ var json = [
     {
       "nodeTo":"92",
       "data" :{
+          "nodeToName":'anavadhya',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "92"],
@@ -1783,7 +2037,9 @@ var json = [
     {
       "nodeTo":"93",
       "data" :{
+          "nodeToName":'manuvansha',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "93"],
@@ -1792,7 +2048,9 @@ var json = [
     {
       "nodeTo":"94",
       "data" :{
+          "nodeToName":'siddha',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "94"],
@@ -1801,7 +2059,9 @@ var json = [
     {
       "nodeTo":"95",
       "data" :{
+          "nodeToName":'purna',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "95"],
@@ -1810,7 +2070,9 @@ var json = [
     {
       "nodeTo":"96",
       "data" :{
+          "nodeToName":'barhi',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "96"],
@@ -1819,7 +2081,9 @@ var json = [
     {
       "nodeTo":"97",
       "data" :{
+          "nodeToName":'Alambusha',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "97"],
@@ -1828,7 +2092,9 @@ var json = [
     {
       "nodeTo":"98",
       "data" :{
+          "nodeToName":'Mishrakeshi',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "98"],
@@ -1837,7 +2103,9 @@ var json = [
     {
       "nodeTo":"99",
       "data" :{
+          "nodeToName":'VidhutParna',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["45", "99"],
@@ -2006,7 +2274,9 @@ var json = [
     {
       "nodeTo":"391",
       "data" :{
+          "nodeToName":'iLavida',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["97", "391"],
@@ -2023,7 +2293,9 @@ var json = [
     {
       "nodeTo":"387",
       "data" :{
+          "nodeToName":'kuber',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["391", "387"],
@@ -2032,7 +2304,9 @@ var json = [
     {
       "nodeTo":"385",
       "data" :{
+            "nodeToName":'Visravas',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -2070,7 +2344,9 @@ var json = [
     {
       "nodeTo":"113",
       "data" :{
+          "nodeToName":'Suchandra',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["47", "113"],
@@ -2079,7 +2355,9 @@ var json = [
     {
       "nodeTo":"114",
       "data" :{
+          "nodeToName":'Chandrahanta',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["47", "114"],
@@ -2088,7 +2366,9 @@ var json = [
     {
       "nodeTo":"115",
       "data" :{
+          "nodeToName":'Chandrapramardan',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["47", "115"],
@@ -2097,7 +2377,9 @@ var json = [
     {
       "nodeTo":"116",
       "data" :{
+          "nodeToName":'mrugi',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["47", "116"],
@@ -2106,7 +2388,9 @@ var json = [
     {
       "nodeTo":"117",
       "data" :{
+          "nodeToName":'mrugmanda',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["47", "117"],
@@ -2115,7 +2399,9 @@ var json = [
     {
       "nodeTo":"118",
       "data" :{
+          "nodeToName":'hari',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["47", "118"],
@@ -2124,7 +2410,9 @@ var json = [
     {
       "nodeTo":"119",
       "data" :{
+          "nodeToName":'bhadramna',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["47", "119"],
@@ -2133,7 +2421,9 @@ var json = [
     {
       "nodeTo":"120",
       "data" :{
+          "nodeToName":'matangi',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["47", "120"],
@@ -2142,7 +2432,9 @@ var json = [
     {
       "nodeTo":"121",
       "data" :{
+          "nodeToName":'sharduli',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["47", "121"],
@@ -2151,7 +2443,9 @@ var json = [
     {
       "nodeTo":"122",
       "data" :{
+          "nodeToName":'shveta',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["47", "122"],
@@ -2160,7 +2454,9 @@ var json = [
     {
       "nodeTo":"123",
       "data" :{
+          "nodeToName":'surabhi',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["47", "123"],
@@ -2169,7 +2465,9 @@ var json = [
     {
       "nodeTo":"124",
       "data" :{
+          "nodeToName":'Surasa',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["47", "124"],
@@ -2178,7 +2476,9 @@ var json = [
     {
       "nodeTo":"396",
       "data" :{
+          "nodeToName":'Daugher of Krodha',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["47", "396"],
@@ -2243,7 +2543,9 @@ var json = [
     {
       "nodeTo":"125",
       "data" :{
+          "nodeToName":'Airavat',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["119", "125"],
@@ -2284,7 +2586,9 @@ var json = [
     {
       "nodeTo":"126",
       "data" :{
+          "nodeToName":'Shvet diggaj',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["122", "126"],
@@ -2309,7 +2613,9 @@ var json = [
     {
       "nodeTo":"127",
       "data" :{
+          "nodeToName":'Rohini',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["123", "127"],
@@ -2318,7 +2624,9 @@ var json = [
     {
       "nodeTo":"128",
       "data" :{
+          "nodeToName":'Gandharvi',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["123", "128"],
@@ -2327,7 +2635,9 @@ var json = [
     {
       "nodeTo":"129",
       "data" :{
+          "nodeToName":'Vimala',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["123", "129"],
@@ -2336,7 +2646,9 @@ var json = [
     {
       "nodeTo":"130",
       "data" :{
+          "nodeToName":'Anala',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["123", "130"],
@@ -2401,7 +2713,9 @@ var json = [
     {
       "nodeTo":"131",
       "data" :{
+          "nodeToName":'Viprachitti',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["48", "131"],
@@ -2426,7 +2740,9 @@ var json = [
     {
       "nodeTo":"133",
       "data" :{
+          "nodeToName":'kaki',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["49", "133"],
@@ -2435,7 +2751,9 @@ var json = [
     {
       "nodeTo":"135",
       "data" :{
+          "nodeToName":'shyeni',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["49", "135"],
@@ -2444,7 +2762,9 @@ var json = [
     {
       "nodeTo":"136",
       "data" :{
+          "nodeToName":'bhasi',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["49", "136"],
@@ -2453,7 +2773,9 @@ var json = [
     {
       "nodeTo":"137",
       "data" :{
+          "nodeToName":'Dhrutrashtri',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["49", "137"],
@@ -2462,7 +2784,9 @@ var json = [
     {
       "nodeTo":"138",
       "data" :{
+          "nodeToName":'Shuki',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["49", "138"],
@@ -2471,7 +2795,9 @@ var json = [
     {
       "nodeTo":"399",
       "data" :{
+          "nodeToName":'Daugher of Tamra',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["49", "399"],
@@ -2488,7 +2814,9 @@ var json = [
     {
       "nodeTo":"134",
       "data" :{
+          "nodeToName":'uluk',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["133", "134"],
@@ -2513,7 +2841,9 @@ var json = [
     {
       "nodeTo":"53",
       "data" :{
+          "nodeToName":'sampati',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["135", "53"],
@@ -2522,7 +2852,9 @@ var json = [
     {
       "nodeTo":"54",
       "data" :{
+          "nodeToName":'jatayu',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["135", "54"],
@@ -2547,7 +2879,9 @@ var json = [
     {
       "nodeTo":"139",
       "data" :{
+          "nodeToName":'Hams-kalhams',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["137", "139"],
@@ -2556,7 +2890,9 @@ var json = [
     {
       "nodeTo":"140",
       "data" :{
+          "nodeToName":'chakravat',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["137", "140"],
@@ -2605,7 +2941,9 @@ var json = [
     {
       "nodeTo":"141",
       "data" :{
+          "nodeToName":'dhata',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["50", "141"],
@@ -2614,7 +2952,9 @@ var json = [
     {
       "nodeTo":"142",
       "data" :{
+          "nodeToName":'Urukarma Vishnu Vaman',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["50", "142"],
@@ -2623,7 +2963,9 @@ var json = [
     {
       "nodeTo":"143",
       "data" :{
+          "nodeToName":'Mitra',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["50", "143"],
@@ -2632,7 +2974,9 @@ var json = [
     {
       "nodeTo":"144",
       "data" :{
+          "nodeToName":'Aryama',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["50", "144"],
@@ -2641,7 +2985,9 @@ var json = [
     {
       "nodeTo":"145",
       "data" :{
+          "nodeToName":'Shakra (Indra)',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["50", "145"],
@@ -2650,7 +2996,9 @@ var json = [
     {
       "nodeTo":"146",
       "data" :{
+          "nodeToName":'Varun',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["50", "146"],
@@ -2659,7 +3007,9 @@ var json = [
     {
       "nodeTo":"147",
       "data" :{
+          "nodeToName":'Ansha',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["50", "147"],
@@ -2668,7 +3018,9 @@ var json = [
     {
       "nodeTo":"148",
       "data" :{
+          "nodeToName":'Bhag',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["50", "148"],
@@ -2677,7 +3029,9 @@ var json = [
     {
       "nodeTo":"149",
       "data" :{
+          "nodeToName":'Vivasvan',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["50", "149"],
@@ -2686,7 +3040,9 @@ var json = [
     {
       "nodeTo":"150",
       "data" :{
+          "nodeToName":'pusha',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["50", "150"],
@@ -2695,7 +3051,9 @@ var json = [
     {
       "nodeTo":"151",
       "data" :{
+          "nodeToName":'Savita',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["50", "151"],
@@ -2704,7 +3062,9 @@ var json = [
     {
       "nodeTo":"152",
       "data" :{
+          "nodeToName":'Tvashta',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["50", "152"],
@@ -2713,7 +3073,9 @@ var json = [
     {
       "nodeTo":"397",
       "data" :{
+          "nodeToName":'Daugher of Aditi',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["50", "397"],
@@ -2722,7 +3084,9 @@ var json = [
     {
       "nodeTo":"20",
       "data" :{
+            "nodeToName":'kashyap',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -2792,7 +3156,9 @@ var json = [
     {
       "nodeTo":"153",
       "data" :{
+          "nodeToName":'Manu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["149", "153"],
@@ -2801,7 +3167,9 @@ var json = [
     {
       "nodeTo":"154",
       "data" :{
+          "nodeToName":'Yamraj',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["149", "154"],
@@ -2818,7 +3186,9 @@ var json = [
     {
       "nodeTo":"324",
       "data" :{
+          "nodeToName":'Aarushi',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["153", "324"],
@@ -2827,7 +3197,9 @@ var json = [
     {
       "nodeTo":"155",
       "data" :{
+          "nodeToName":'Ven',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["153", "155"],
@@ -2836,7 +3208,9 @@ var json = [
     {
       "nodeTo":"156",
       "data" :{
+          "nodeToName":'Dhushnu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["153", "156"],
@@ -2845,7 +3219,9 @@ var json = [
     {
       "nodeTo":"157",
       "data" :{
+          "nodeToName":'Narishyant',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["153", "157"],
@@ -2854,7 +3230,9 @@ var json = [
     {
       "nodeTo":"158",
       "data" :{
+          "nodeToName":'Nabhag',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["153", "158"],
@@ -2863,7 +3241,9 @@ var json = [
     {
       "nodeTo":"159",
       "data" :{
+          "nodeToName":'Ishvaku',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["153", "159"],
@@ -2872,7 +3252,9 @@ var json = [
     {
       "nodeTo":"160",
       "data" :{
+          "nodeToName":'Karush',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["153", "160"],
@@ -2881,7 +3263,9 @@ var json = [
     {
       "nodeTo":"161",
       "data" :{
+          "nodeToName":'Sharyati',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["153", "161"],
@@ -2890,7 +3274,9 @@ var json = [
     {
       "nodeTo":"162",
       "data" :{
+          "nodeToName":'ila',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["153", "162"],
@@ -2899,7 +3285,9 @@ var json = [
     {
       "nodeTo":"163",
       "data" :{
+          "nodeToName":'Prushadh',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["153", "163"],
@@ -2908,7 +3296,9 @@ var json = [
     {
       "nodeTo":"164",
       "data" :{
+          "nodeToName":'Nabhagrishtha',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["153", "164"],
@@ -2925,7 +3315,9 @@ var json = [
     {
       "nodeTo":"12",
       "data" :{
+          "nodeToName":'Aurva',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["324", "12"],
@@ -2934,7 +3326,9 @@ var json = [
     {
       "nodeTo":"293",
       "data" :{
+            "nodeToName":'Chyavan',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -2948,7 +3342,9 @@ var json = [
     {
       "nodeTo":"298",
       "data" :{
+          "nodeToName":'Ruchik',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["12", "298"],
@@ -2965,7 +3361,9 @@ var json = [
     {
       "nodeTo":"302",
       "data" :{
+          "nodeToName":'Jamadagni',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["298", "302"],
@@ -2982,7 +3380,9 @@ var json = [
     {
       "nodeTo":"303",
       "data" :{
+          "nodeToName":'parshuram',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["302", "303"],
@@ -2991,7 +3391,9 @@ var json = [
     {
       "nodeTo":"304",
       "data" :{
+            "nodeToName":'Renuka',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -3069,7 +3471,9 @@ var json = [
     {
       "nodeTo":"165",
       "data" :{
+          "nodeToName":'Pururava',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["162", "165"],
@@ -3086,7 +3490,9 @@ var json = [
     {
       "nodeTo":"166",
       "data" :{
+          "nodeToName":'Urvashi',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["165", "166"],
@@ -3103,7 +3509,9 @@ var json = [
     {
       "nodeTo":"167",
       "data" :{
+          "nodeToName":'Aayu',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["166", "167"],
@@ -3120,7 +3528,9 @@ var json = [
     {
       "nodeTo":"169",
       "data" :{
+          "nodeToName":'Nahush',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["167", "169"],
@@ -3129,7 +3539,9 @@ var json = [
     {
       "nodeTo":"168",
       "data" :{
+            "nodeToName":'sarvabhavani',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -3143,7 +3555,9 @@ var json = [
     {
       "nodeTo":"170",
       "data" :{
+          "nodeToName":'Yati',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["169", "170"],
@@ -3152,7 +3566,9 @@ var json = [
     {
       "nodeTo":"171",
       "data" :{
+          "nodeToName":'yayati',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["169", "171"],
@@ -3161,7 +3577,9 @@ var json = [
     {
       "nodeTo":"172",
       "data" :{
+          "nodeToName":'samyati',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["169", "172"],
@@ -3170,7 +3588,9 @@ var json = [
     {
       "nodeTo":"173",
       "data" :{
+          "nodeToName":'Raji',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["169", "173"],
@@ -3179,7 +3599,9 @@ var json = [
     {
       "nodeTo":"174",
       "data" :{
+          "nodeToName":'gay',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["169", "174"],
@@ -3188,7 +3610,9 @@ var json = [
     {
       "nodeTo":"175",
       "data" :{
+          "nodeToName":'anena',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["169", "175"],
@@ -3213,7 +3637,9 @@ var json = [
     {
       "nodeTo":"177",
       "data" :{
+          "nodeToName":'tarvashu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["171", "177"],
@@ -3222,7 +3648,9 @@ var json = [
     {
       "nodeTo":"179",
       "data" :{
+          "nodeToName":'Druhyu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["171", "179"],
@@ -3231,7 +3659,9 @@ var json = [
     {
       "nodeTo":"180",
       "data" :{
+          "nodeToName":'anu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["171", "180"],
@@ -3240,7 +3670,9 @@ var json = [
     {
       "nodeTo":"181",
       "data" :{
+          "nodeToName":'Puru',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["171", "181"],
@@ -3249,13 +3681,17 @@ var json = [
     {
       "nodeTo":"176",
       "data" :{
+            "nodeToName":'devyani',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"178",
       "data" :{
+            "nodeToName":'Sarmishtha',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -3293,7 +3729,9 @@ var json = [
     {
       "nodeTo":"182",
       "data" :{
+          "nodeToName":'janmejay',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["181", "182"],
@@ -3310,7 +3748,9 @@ var json = [
     {
       "nodeTo":"183",
       "data" :{
+          "nodeToName":'prachinvan',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["182", "183"],
@@ -3327,7 +3767,9 @@ var json = [
     {
       "nodeTo":"184",
       "data" :{
+          "nodeToName":'sanyati',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["183", "184"],
@@ -3344,7 +3786,9 @@ var json = [
     {
       "nodeTo":"185",
       "data" :{
+          "nodeToName":'ahmyati',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["184", "185"],
@@ -3361,7 +3805,9 @@ var json = [
     {
       "nodeTo":"186",
       "data" :{
+          "nodeToName":'sarvabhom',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["185", "186"],
@@ -3378,7 +3824,9 @@ var json = [
     {
       "nodeTo":"187",
       "data" :{
+          "nodeToName":'jaytsen',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["186", "187"],
@@ -3395,7 +3843,9 @@ var json = [
     {
       "nodeTo":"188",
       "data" :{
+          "nodeToName":'avachin',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["187", "188"],
@@ -3412,7 +3862,9 @@ var json = [
     {
       "nodeTo":"189",
       "data" :{
+          "nodeToName":'arih',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["188", "189"],
@@ -3429,7 +3881,9 @@ var json = [
     {
       "nodeTo":"190",
       "data" :{
+          "nodeToName":'mahabhom',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["189", "190"],
@@ -3446,7 +3900,9 @@ var json = [
     {
       "nodeTo":"191",
       "data" :{
+          "nodeToName":'aytnai',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["190", "191"],
@@ -3463,7 +3919,9 @@ var json = [
     {
       "nodeTo":"192",
       "data" :{
+          "nodeToName":'akrodhan',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["191", "192"],
@@ -3480,7 +3938,9 @@ var json = [
     {
       "nodeTo":"193",
       "data" :{
+          "nodeToName":'devatithi',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["192", "193"],
@@ -3497,7 +3957,9 @@ var json = [
     {
       "nodeTo":"194",
       "data" :{
+          "nodeToName":'arih',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["193", "194"],
@@ -3514,7 +3976,9 @@ var json = [
     {
       "nodeTo":"195",
       "data" :{
+          "nodeToName":'ruksha',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["194", "195"],
@@ -3531,7 +3995,9 @@ var json = [
     {
       "nodeTo":"196",
       "data" :{
+          "nodeToName":'matinar',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["195", "196"],
@@ -3548,7 +4014,9 @@ var json = [
     {
       "nodeTo":"197",
       "data" :{
+          "nodeToName":'tamsu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["196", "197"],
@@ -3565,7 +4033,9 @@ var json = [
     {
       "nodeTo":"198",
       "data" :{
+          "nodeToName":'ilin',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["197", "198"],
@@ -3582,7 +4052,9 @@ var json = [
     {
       "nodeTo":"199",
       "data" :{
+          "nodeToName":'dushyant',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["198", "199"],
@@ -3599,7 +4071,9 @@ var json = [
     {
       "nodeTo":"200",
       "data" :{
+          "nodeToName":'bharat',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["199", "200"],
@@ -3616,7 +4090,9 @@ var json = [
     {
       "nodeTo":"201",
       "data" :{
+          "nodeToName":'bhumanyu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["200", "201"],
@@ -3633,7 +4109,9 @@ var json = [
     {
       "nodeTo":"202",
       "data" :{
+          "nodeToName":'suhotra',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["201", "202"],
@@ -3650,7 +4128,9 @@ var json = [
     {
       "nodeTo":"203",
       "data" :{
+          "nodeToName":'hasti',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["202", "203"],
@@ -3667,7 +4147,9 @@ var json = [
     {
       "nodeTo":"204",
       "data" :{
+          "nodeToName":'vinkunthan',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["203", "204"],
@@ -3684,7 +4166,9 @@ var json = [
     {
       "nodeTo":"205",
       "data" :{
+          "nodeToName":'aajamidh',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["204", "205"],
@@ -3701,7 +4185,9 @@ var json = [
     {
       "nodeTo":"206",
       "data" :{
+          "nodeToName":'samvaran',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["205", "206"],
@@ -3718,7 +4204,9 @@ var json = [
     {
       "nodeTo":"207",
       "data" :{
+          "nodeToName":'kuru',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["206", "207"],
@@ -3735,7 +4223,9 @@ var json = [
     {
       "nodeTo":"208",
       "data" :{
+          "nodeToName":'vidurath',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["207", "208"],
@@ -3752,7 +4242,9 @@ var json = [
     {
       "nodeTo":"209",
       "data" :{
+          "nodeToName":'aanashva',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["208", "209"],
@@ -3769,7 +4261,9 @@ var json = [
     {
       "nodeTo":"210",
       "data" :{
+          "nodeToName":'parikshit',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["209", "210"],
@@ -3786,7 +4280,9 @@ var json = [
     {
       "nodeTo":"211",
       "data" :{
+          "nodeToName":'bhimsen',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["210", "211"],
@@ -3803,7 +4299,9 @@ var json = [
     {
       "nodeTo":"212",
       "data" :{
+          "nodeToName":'pratishrava',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["211", "212"],
@@ -3820,7 +4318,9 @@ var json = [
     {
       "nodeTo":"213",
       "data" :{
+          "nodeToName":'pratip',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["212", "213"],
@@ -3837,7 +4337,9 @@ var json = [
     {
       "nodeTo":"214",
       "data" :{
+          "nodeToName":'devapi',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["213", "214"],
@@ -3846,7 +4348,9 @@ var json = [
     {
       "nodeTo":"215",
       "data" :{
+          "nodeToName":'shantanu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["213", "215"],
@@ -3855,7 +4359,9 @@ var json = [
     {
       "nodeTo":"216",
       "data" :{
+          "nodeToName":'bahlik',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["213", "216"],
@@ -3880,7 +4386,9 @@ var json = [
     {
       "nodeTo":"218",
       "data" :{
+          "nodeToName":'Vichitravirya',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["215", "218"],
@@ -3889,7 +4397,9 @@ var json = [
     {
       "nodeTo":"220",
       "data" :{
+          "nodeToName":'bhishma',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["215", "220"],
@@ -3898,7 +4408,9 @@ var json = [
     {
       "nodeTo":"221",
       "data" :{
+          "nodeToName":'Chitrangad',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["215", "221"],
@@ -3907,13 +4419,17 @@ var json = [
     {
       "nodeTo":"217",
       "data" :{
+            "nodeToName":'satyavati',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"219",
       "data" :{
+            "nodeToName":'Ganga',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -3927,13 +4443,17 @@ var json = [
     {
       "nodeTo":"224",
       "data" :{
+            "nodeToName":'Ambika',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"225",
       "data" :{
+            "nodeToName":'Ambalika',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -4043,7 +4563,9 @@ var json = [
     {
       "nodeTo":"305",
       "data" :{
+          "nodeToName":'"Sangya (Saravyu, Vadavarupdharini)"',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["152", "305"],
@@ -4060,7 +4582,9 @@ var json = [
     {
       "nodeTo":"306",
       "data" :{
+          "nodeToName":'Ashvinikumar',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["305", "306"],
@@ -4069,7 +4593,9 @@ var json = [
     {
       "nodeTo":"241",
       "data" :{
+            "nodeToName":'surya',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -4099,7 +4625,9 @@ var json = [
     {
       "nodeTo":"394",
       "data" :{
+          "nodeToName":'Son of Dharma',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["10", "394"],
@@ -4108,7 +4636,9 @@ var json = [
     {
       "nodeTo":"276",
       "data" :{
+          "nodeToName":'Dhar',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["10", "276"],
@@ -4117,7 +4647,9 @@ var json = [
     {
       "nodeTo":"277",
       "data" :{
+          "nodeToName":'Dhruv',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["10", "277"],
@@ -4126,7 +4658,9 @@ var json = [
     {
       "nodeTo":"278",
       "data" :{
+          "nodeToName":'Som',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["10", "278"],
@@ -4135,7 +4669,9 @@ var json = [
     {
       "nodeTo":"279",
       "data" :{
+          "nodeToName":'Aha',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["10", "279"],
@@ -4144,7 +4680,9 @@ var json = [
     {
       "nodeTo":"280",
       "data" :{
+          "nodeToName":'Anil',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["10", "280"],
@@ -4153,7 +4691,9 @@ var json = [
     {
       "nodeTo":"281",
       "data" :{
+          "nodeToName":'Anal',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["10", "281"],
@@ -4162,7 +4702,9 @@ var json = [
     {
       "nodeTo":"282",
       "data" :{
+          "nodeToName":'Pratyush',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["10", "282"],
@@ -4171,7 +4713,9 @@ var json = [
     {
       "nodeTo":"283",
       "data" :{
+          "nodeToName":'Prabhas',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["10", "283"],
@@ -4180,7 +4724,9 @@ var json = [
     {
       "nodeTo":"284",
       "data" :{
+          "nodeToName":'Sham',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["10", "284"],
@@ -4189,7 +4735,9 @@ var json = [
     {
       "nodeTo":"285",
       "data" :{
+          "nodeToName":'Kaam',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["10", "285"],
@@ -4198,7 +4746,9 @@ var json = [
     {
       "nodeTo":"286",
       "data" :{
+          "nodeToName":'harsh',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["10", "286"],
@@ -4207,61 +4757,81 @@ var json = [
     {
       "nodeTo":"307",
       "data" :{
+            "nodeToName":'Kirti',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"308",
       "data" :{
+            "nodeToName":'Lakshmi',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"309",
       "data" :{
+            "nodeToName":'Dhruti',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"310",
       "data" :{
+            "nodeToName":'Medha',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"311",
       "data" :{
+            "nodeToName":'Pushti',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"312",
       "data" :{
+            "nodeToName":'Shraddha',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"313",
       "data" :{
+            "nodeToName":'Kriya',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"314",
       "data" :{
+            "nodeToName":'Buddhi',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"315",
       "data" :{
+            "nodeToName":'Lajja',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"316",
       "data" :{
+            "nodeToName":'Mati',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -4283,7 +4853,9 @@ var json = [
     {
       "nodeTo":"318",
       "data" :{
+          "nodeToName":'Dravin',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["276", "318"],
@@ -4292,7 +4864,9 @@ var json = [
     {
       "nodeTo":"319",
       "data" :{
+          "nodeToName":'Hutahavyaha',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["276", "319"],
@@ -4325,7 +4899,9 @@ var json = [
     {
       "nodeTo":"317",
       "data" :{
+          "nodeToName":'kaal',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["277", "317"],
@@ -4382,7 +4958,9 @@ var json = [
     {
       "nodeTo":"320",
       "data" :{
+          "nodeToName":'Deval',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["282", "320"],
@@ -4407,7 +4985,9 @@ var json = [
     {
       "nodeTo":"322",
       "data" :{
+          "nodeToName":'Vishvakarma',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["283", "322"],
@@ -4416,7 +4996,9 @@ var json = [
     {
       "nodeTo":"321",
       "data" :{
+            "nodeToName":'Sister of bruhaspati',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -4430,7 +5012,9 @@ var json = [
     {
       "nodeTo":"287",
       "data" :{
+            "nodeToName":'prapti',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -4444,7 +5028,9 @@ var json = [
     {
       "nodeTo":"288",
       "data" :{
+            "nodeToName":'rati',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -4458,7 +5044,9 @@ var json = [
     {
       "nodeTo":"289",
       "data" :{
+            "nodeToName":'nanda',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -4472,7 +5060,9 @@ var json = [
     {
       "nodeTo":"323",
       "data" :{
+          "nodeToName":'kavi',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["11", "323"],
@@ -4481,7 +5071,9 @@ var json = [
     {
       "nodeTo":"293",
       "data" :{
+          "nodeToName":'Chyavan',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["11", "293"],
@@ -4490,7 +5082,9 @@ var json = [
     {
       "nodeTo":"294",
       "data" :{
+          "nodeToName":'Vrushparva',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["11", "294"],
@@ -4507,7 +5101,9 @@ var json = [
     {
       "nodeTo":"292",
       "data" :{
+          "nodeToName":'shukracharya',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["323", "292"],
@@ -4524,7 +5120,9 @@ var json = [
     {
       "nodeTo":"295",
       "data" :{
+          "nodeToName":'Tvashtadhar',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["292", "295"],
@@ -4533,7 +5131,9 @@ var json = [
     {
       "nodeTo":"296",
       "data" :{
+          "nodeToName":'Atri',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["292", "296"],
@@ -4542,7 +5142,9 @@ var json = [
     {
       "nodeTo":"176",
       "data" :{
+          "nodeToName":'devyani',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["292", "176"],
@@ -4551,7 +5153,9 @@ var json = [
     {
       "nodeTo":"301",
       "data" :{
+            "nodeToName":'Jayanti',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -4581,7 +5185,9 @@ var json = [
     {
       "nodeTo":"177",
       "data" :{
+          "nodeToName":'tarvashu',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["176", "177"],
@@ -4590,7 +5196,9 @@ var json = [
     {
       "nodeTo":"171",
       "data" :{
+            "nodeToName":'yayati',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -4604,7 +5212,9 @@ var json = [
     {
       "nodeTo":"12",
       "data" :{
+          "nodeToName":'Aurva',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["293", "12"],
@@ -4613,13 +5223,17 @@ var json = [
     {
       "nodeTo":"299",
       "data" :{
+            "nodeToName":'Aaruni',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"324",
       "data" :{
+            "nodeToName":'Aarushi',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -4633,7 +5247,9 @@ var json = [
     {
       "nodeTo":"178",
       "data" :{
+          "nodeToName":'Sarmishtha',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["294", "178"],
@@ -4650,7 +5266,9 @@ var json = [
     {
       "nodeTo":"179",
       "data" :{
+          "nodeToName":'Druhyu',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["178", "179"],
@@ -4659,7 +5277,9 @@ var json = [
     {
       "nodeTo":"180",
       "data" :{
+          "nodeToName":'anu',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["178", "180"],
@@ -4668,7 +5288,9 @@ var json = [
     {
       "nodeTo":"181",
       "data" :{
+          "nodeToName":'Puru',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["178", "181"],
@@ -4677,7 +5299,9 @@ var json = [
     {
       "nodeTo":"171",
       "data" :{
+            "nodeToName":'yayati',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -4715,7 +5339,9 @@ var json = [
     {
       "nodeTo":"24",
       "data" :{
+          "nodeToName":'mrugvyadh',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["23", "24"],
@@ -4724,7 +5350,9 @@ var json = [
     {
       "nodeTo":"25",
       "data" :{
+          "nodeToName":'Sarp',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["23", "25"],
@@ -4733,7 +5361,9 @@ var json = [
     {
       "nodeTo":"26",
       "data" :{
+          "nodeToName":'Nirhurti',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["23", "26"],
@@ -4742,7 +5372,9 @@ var json = [
     {
       "nodeTo":"27",
       "data" :{
+          "nodeToName":'Ajaikpaad',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["23", "27"],
@@ -4751,7 +5383,9 @@ var json = [
     {
       "nodeTo":"28",
       "data" :{
+          "nodeToName":'Ahirbrudhnya',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["23", "28"],
@@ -4760,7 +5394,9 @@ var json = [
     {
       "nodeTo":"29",
       "data" :{
+          "nodeToName":'Pinaki',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["23", "29"],
@@ -4769,7 +5405,9 @@ var json = [
     {
       "nodeTo":"30",
       "data" :{
+          "nodeToName":'dahan',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["23", "30"],
@@ -4778,7 +5416,9 @@ var json = [
     {
       "nodeTo":"31",
       "data" :{
+          "nodeToName":'Ishvar',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["23", "31"],
@@ -4787,7 +5427,9 @@ var json = [
     {
       "nodeTo":"32",
       "data" :{
+          "nodeToName":'kapali',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["23", "32"],
@@ -4796,7 +5438,9 @@ var json = [
     {
       "nodeTo":"33",
       "data" :{
+          "nodeToName":'Sthanu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["23", "33"],
@@ -4805,7 +5449,9 @@ var json = [
     {
       "nodeTo":"34",
       "data" :{
+          "nodeToName":'Bhava',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["23", "34"],
@@ -4814,7 +5460,9 @@ var json = [
     {
       "nodeTo":"35",
       "data" :{
+          "nodeToName":'Rudragan',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["23", "35"],
@@ -4927,7 +5575,9 @@ var json = [
     {
       "nodeTo":"223",
       "data" :{
+          "nodeToName":'parashar',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["370", "223"],
@@ -4936,7 +5586,9 @@ var json = [
     {
       "nodeTo":"371",
       "data" :{
+          "nodeToName":'Shakti',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["370", "371"],
@@ -4945,7 +5597,9 @@ var json = [
     {
       "nodeTo":"372",
       "data" :{
+          "nodeToName":'Mitra',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["370", "372"],
@@ -4954,7 +5608,9 @@ var json = [
     {
       "nodeTo":"373",
       "data" :{
+            "nodeToName":'Arundhati',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -4968,7 +5624,9 @@ var json = [
     {
       "nodeTo":"222",
       "data" :{
+          "nodeToName":'Maharshi Vyas',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["223", "222"],
@@ -4985,7 +5643,9 @@ var json = [
     {
       "nodeTo":"226",
       "data" :{
+          "nodeToName":'Dhrutrashtra',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["222", "226"],
@@ -4994,7 +5654,9 @@ var json = [
     {
       "nodeTo":"232",
       "data" :{
+          "nodeToName":'Pandu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["222", "232"],
@@ -5003,7 +5665,9 @@ var json = [
     {
       "nodeTo":"376",
       "data" :{
+          "nodeToName":'sukhdevji',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["222", "376"],
@@ -5012,7 +5676,9 @@ var json = [
     {
       "nodeTo":"378",
       "data" :{
+          "nodeToName":'Mahabharat (Jay)',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["222", "378"],
@@ -5021,7 +5687,9 @@ var json = [
     {
       "nodeTo":"291",
       "data" :{
+          "nodeToName":'vidur',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["222", "291"],
@@ -5030,7 +5698,9 @@ var json = [
     {
       "nodeTo":"374",
       "data" :{
+            "nodeToName":'Pinjala (Vatika)',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -5044,7 +5714,9 @@ var json = [
     {
       "nodeTo":"347",
       "data" :{
+          "nodeToName":'dushala',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["226", "347"],
@@ -5053,7 +5725,9 @@ var json = [
     {
       "nodeTo":"227",
       "data" :{
+          "nodeToName":'Duryodhan',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["226", "227"],
@@ -5062,7 +5736,9 @@ var json = [
     {
       "nodeTo":"228",
       "data" :{
+          "nodeToName":'Duhshashan',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["226", "228"],
@@ -5071,7 +5747,9 @@ var json = [
     {
       "nodeTo":"229",
       "data" :{
+          "nodeToName":'Vikarna',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["226", "229"],
@@ -5080,7 +5758,9 @@ var json = [
     {
       "nodeTo":"230",
       "data" :{
+          "nodeToName":'Chitrasen',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["226", "230"],
@@ -5097,7 +5777,9 @@ var json = [
     {
       "nodeTo":"348",
       "data" :{
+            "nodeToName":'Jaydrath',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -5143,7 +5825,9 @@ var json = [
     {
       "nodeTo":"235",
       "data" :{
+          "nodeToName":'Arjun',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["232", "235"],
@@ -5152,7 +5836,9 @@ var json = [
     {
       "nodeTo":"236",
       "data" :{
+          "nodeToName":'Yudhishthir',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["232", "236"],
@@ -5161,7 +5847,9 @@ var json = [
     {
       "nodeTo":"237",
       "data" :{
+          "nodeToName":'bhim',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["232", "237"],
@@ -5170,7 +5858,9 @@ var json = [
     {
       "nodeTo":"238",
       "data" :{
+          "nodeToName":'Nakul',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["232", "238"],
@@ -5179,7 +5869,9 @@ var json = [
     {
       "nodeTo":"239",
       "data" :{
+          "nodeToName":'Sahadev',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["232", "239"],
@@ -5188,13 +5880,17 @@ var json = [
     {
       "nodeTo":"233",
       "data" :{
+            "nodeToName":'Kunti (Pritha)',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"234",
       "data" :{
+            "nodeToName":'madri',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -5208,7 +5904,9 @@ var json = [
     {
       "nodeTo":"251",
       "data" :{
+          "nodeToName":'Babhruvahan',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["235", "251"],
@@ -5217,7 +5915,9 @@ var json = [
     {
       "nodeTo":"252",
       "data" :{
+          "nodeToName":'Abhimanyu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["235", "252"],
@@ -5226,7 +5926,9 @@ var json = [
     {
       "nodeTo":"255",
       "data" :{
+          "nodeToName":'ShrutKirti',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["235", "255"],
@@ -5235,7 +5937,9 @@ var json = [
     {
       "nodeTo":"258",
       "data" :{
+          "nodeToName":'Idavan',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["235", "258"],
@@ -5244,25 +5948,33 @@ var json = [
     {
       "nodeTo":"242",
       "data" :{
+            "nodeToName":'Chitrangada',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"243",
       "data" :{
+            "nodeToName":'Subhadra',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"244",
       "data" :{
+            "nodeToName":'Draupadi',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"245",
       "data" :{
+            "nodeToName":'Ulupi',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -5284,7 +5996,9 @@ var json = [
     {
       "nodeTo":"265",
       "data" :{
+          "nodeToName":'parikshit',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["252", "265"],
@@ -5293,7 +6007,9 @@ var json = [
     {
       "nodeTo":"264",
       "data" :{
+            "nodeToName":'Uttara',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -5307,7 +6023,9 @@ var json = [
     {
       "nodeTo":"266",
       "data" :{
+          "nodeToName":'Shrutsen',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["265", "266"],
@@ -5316,7 +6034,9 @@ var json = [
     {
       "nodeTo":"267",
       "data" :{
+          "nodeToName":'Ugrasen',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["265", "267"],
@@ -5325,7 +6045,9 @@ var json = [
     {
       "nodeTo":"268",
       "data" :{
+          "nodeToName":'Bhimsen',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["265", "268"],
@@ -5334,7 +6056,9 @@ var json = [
     {
       "nodeTo":"270",
       "data" :{
+          "nodeToName":'janmejay',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["265", "270"],
@@ -5343,7 +6067,9 @@ var json = [
     {
       "nodeTo":"269",
       "data" :{
+            "nodeToName":'Madravati',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -5381,7 +6107,9 @@ var json = [
     {
       "nodeTo":"271",
       "data" :{
+          "nodeToName":'Bahushtama',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["270", "271"],
@@ -5398,7 +6126,9 @@ var json = [
     {
       "nodeTo":"272",
       "data" :{
+          "nodeToName":'shatanik',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["271", "272"],
@@ -5407,7 +6137,9 @@ var json = [
     {
       "nodeTo":"273",
       "data" :{
+          "nodeToName":'shankukarna',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["271", "273"],
@@ -5424,7 +6156,9 @@ var json = [
     {
       "nodeTo":"274",
       "data" :{
+          "nodeToName":'ashmeghadatta',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["272", "274"],
@@ -5473,7 +6207,9 @@ var json = [
     {
       "nodeTo":"253",
       "data" :{
+          "nodeToName":'Prativindhya',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["236", "253"],
@@ -5482,7 +6218,9 @@ var json = [
     {
       "nodeTo":"259",
       "data" :{
+          "nodeToName":'Yodhey',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["236", "259"],
@@ -5491,13 +6229,17 @@ var json = [
     {
       "nodeTo":"244",
       "data" :{
+            "nodeToName":'Draupadi',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"246",
       "data" :{
+            "nodeToName":'Devika',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -5527,7 +6269,9 @@ var json = [
     {
       "nodeTo":"254",
       "data" :{
+          "nodeToName":'Sutsome',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["237", "254"],
@@ -5536,7 +6280,9 @@ var json = [
     {
       "nodeTo":"260",
       "data" :{
+          "nodeToName":'Sarvag',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["237", "260"],
@@ -5545,7 +6291,9 @@ var json = [
     {
       "nodeTo":"261",
       "data" :{
+          "nodeToName":'Ghatotkach',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["237", "261"],
@@ -5554,19 +6302,25 @@ var json = [
     {
       "nodeTo":"244",
       "data" :{
+            "nodeToName":'Draupadi',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"247",
       "data" :{
+            "nodeToName":'Balandhara',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"248",
       "data" :{
+            "nodeToName":'Hidamba',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -5604,7 +6358,9 @@ var json = [
     {
       "nodeTo":"256",
       "data" :{
+          "nodeToName":'Shatanik',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["238", "256"],
@@ -5613,7 +6369,9 @@ var json = [
     {
       "nodeTo":"262",
       "data" :{
+          "nodeToName":'Nirmitra',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["238", "262"],
@@ -5622,13 +6380,17 @@ var json = [
     {
       "nodeTo":"244",
       "data" :{
+            "nodeToName":'Draupadi',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"249",
       "data" :{
+            "nodeToName":'karenumati',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -5658,7 +6420,9 @@ var json = [
     {
       "nodeTo":"257",
       "data" :{
+          "nodeToName":'Shrutkarma',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["239", "257"],
@@ -5667,7 +6431,9 @@ var json = [
     {
       "nodeTo":"263",
       "data" :{
+          "nodeToName":'Suhotra',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["239", "263"],
@@ -5676,13 +6442,17 @@ var json = [
     {
       "nodeTo":"244",
       "data" :{
+            "nodeToName":'Draupadi',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },
     {
       "nodeTo":"250",
       "data" :{
+            "nodeToName":'Vijaya',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -5712,7 +6482,9 @@ var json = [
     {
       "nodeTo":"377",
       "data" :{
+          "nodeToName":'Bhagvad purana',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["376", "377"],
@@ -5769,7 +6541,9 @@ var json = [
     {
       "nodeTo":"381",
       "data" :{
+          "nodeToName":'Bhakti sutra',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["380", "381"],
@@ -5794,7 +6568,9 @@ var json = [
     {
       "nodeTo":"373",
       "data" :{
+          "nodeToName":'Arundhati',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["382", "373"],
@@ -5811,7 +6587,9 @@ var json = [
     {
       "nodeTo":"223",
       "data" :{
+          "nodeToName":'parashar',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["373", "223"],
@@ -5820,7 +6598,9 @@ var json = [
     {
       "nodeTo":"371",
       "data" :{
+          "nodeToName":'Shakti',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["373", "371"],
@@ -5829,7 +6609,9 @@ var json = [
     {
       "nodeTo":"370",
       "data" :{
+            "nodeToName":'Vasishtha',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -5843,7 +6625,9 @@ var json = [
     {
       "nodeTo":"1",
       "data" :{
+          "nodeToName":'Bhrahma',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "1"],
@@ -5852,7 +6636,9 @@ var json = [
     {
       "nodeTo":"300",
       "data" :{
+          "nodeToName":'Chand bhargav',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "300"],
@@ -5861,7 +6647,9 @@ var json = [
     {
       "nodeTo":"301",
       "data" :{
+          "nodeToName":'Jayanti',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "301"],
@@ -5870,7 +6658,9 @@ var json = [
     {
       "nodeTo":"304",
       "data" :{
+          "nodeToName":'Renuka',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "304"],
@@ -5879,7 +6669,9 @@ var json = [
     {
       "nodeTo":"325",
       "data" :{
+          "nodeToName":'Adharm',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "325"],
@@ -5888,7 +6680,9 @@ var json = [
     {
       "nodeTo":"326",
       "data" :{
+          "nodeToName":'Nairurta',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "326"],
@@ -5897,7 +6691,9 @@ var json = [
     {
       "nodeTo":"330",
       "data" :{
+          "nodeToName":'Bharadvaj',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "330"],
@@ -5906,7 +6702,9 @@ var json = [
     {
       "nodeTo":"333",
       "data" :{
+          "nodeToName":'Vasishtha',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "333"],
@@ -5915,7 +6713,9 @@ var json = [
     {
       "nodeTo":"334",
       "data" :{
+          "nodeToName":'Satyaki',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "334"],
@@ -5924,7 +6724,9 @@ var json = [
     {
       "nodeTo":"335",
       "data" :{
+          "nodeToName":'Drupad',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "335"],
@@ -5933,7 +6735,9 @@ var json = [
     {
       "nodeTo":"336",
       "data" :{
+          "nodeToName":'Krutvarma',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "336"],
@@ -5942,7 +6746,9 @@ var json = [
     {
       "nodeTo":"337",
       "data" :{
+          "nodeToName":'Ugrasen',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "337"],
@@ -5951,7 +6757,9 @@ var json = [
     {
       "nodeTo":"217",
       "data" :{
+          "nodeToName":'satyavati',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "217"],
@@ -5960,7 +6768,9 @@ var json = [
     {
       "nodeTo":"338",
       "data" :{
+          "nodeToName":'Svarbhanu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "338"],
@@ -5969,7 +6779,9 @@ var json = [
     {
       "nodeTo":"339",
       "data" :{
+          "nodeToName":'Pondramatsyak',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "339"],
@@ -5978,7 +6790,9 @@ var json = [
     {
       "nodeTo":"219",
       "data" :{
+          "nodeToName":'Ganga',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "219"],
@@ -5987,7 +6801,9 @@ var json = [
     {
       "nodeTo":"340",
       "data" :{
+          "nodeToName":'Shakuni',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "340"],
@@ -5996,7 +6812,9 @@ var json = [
     {
       "nodeTo":"341",
       "data" :{
+          "nodeToName":'Virat',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "341"],
@@ -6005,7 +6823,9 @@ var json = [
     {
       "nodeTo":"342",
       "data" :{
+          "nodeToName":'Arishta',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "342"],
@@ -6014,7 +6834,9 @@ var json = [
     {
       "nodeTo":"344",
       "data" :{
+          "nodeToName":'Kali',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "344"],
@@ -6023,7 +6845,9 @@ var json = [
     {
       "nodeTo":"224",
       "data" :{
+          "nodeToName":'Ambika',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "224"],
@@ -6032,7 +6856,9 @@ var json = [
     {
       "nodeTo":"225",
       "data" :{
+          "nodeToName":'Ambalika',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "225"],
@@ -6041,7 +6867,9 @@ var json = [
     {
       "nodeTo":"346",
       "data" :{
+          "nodeToName":'Vishvjatiy',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "346"],
@@ -6050,7 +6878,9 @@ var json = [
     {
       "nodeTo":"348",
       "data" :{
+          "nodeToName":'Jaydrath',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "348"],
@@ -6059,7 +6889,9 @@ var json = [
     {
       "nodeTo":"349",
       "data" :{
+          "nodeToName":'Agni',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "349"],
@@ -6068,7 +6900,9 @@ var json = [
     {
       "nodeTo":"350",
       "data" :{
+          "nodeToName":'Vayu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "350"],
@@ -6077,7 +6911,9 @@ var json = [
     {
       "nodeTo":"351",
       "data" :{
+          "nodeToName":'Chandrama',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "351"],
@@ -6086,7 +6922,9 @@ var json = [
     {
       "nodeTo":"231",
       "data" :{
+          "nodeToName":'Gandhari',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "231"],
@@ -6095,7 +6933,9 @@ var json = [
     {
       "nodeTo":"353",
       "data" :{
+          "nodeToName":'Dhrushtadhumna',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "353"],
@@ -6104,7 +6944,9 @@ var json = [
     {
       "nodeTo":"354",
       "data" :{
+          "nodeToName":'Shikhandi',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "354"],
@@ -6113,7 +6955,9 @@ var json = [
     {
       "nodeTo":"234",
       "data" :{
+          "nodeToName":'madri',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "234"],
@@ -6122,7 +6966,9 @@ var json = [
     {
       "nodeTo":"355",
       "data" :{
+          "nodeToName":'Shursen',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "355"],
@@ -6131,7 +6977,9 @@ var json = [
     {
       "nodeTo":"358",
       "data" :{
+          "nodeToName":'Kuntibhoj',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "358"],
@@ -6140,7 +6988,9 @@ var json = [
     {
       "nodeTo":"359",
       "data" :{
+          "nodeToName":'Radha',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "359"],
@@ -6149,7 +6999,9 @@ var json = [
     {
       "nodeTo":"360",
       "data" :{
+          "nodeToName":'Adhirath',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "360"],
@@ -6158,7 +7010,9 @@ var json = [
     {
       "nodeTo":"361",
       "data" :{
+          "nodeToName":'Narayan',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "361"],
@@ -6167,7 +7021,9 @@ var json = [
     {
       "nodeTo":"241",
       "data" :{
+          "nodeToName":'surya',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "241"],
@@ -6176,7 +7032,9 @@ var json = [
     {
       "nodeTo":"242",
       "data" :{
+          "nodeToName":'Chitrangada',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "242"],
@@ -6185,7 +7043,9 @@ var json = [
     {
       "nodeTo":"363",
       "data" :{
+          "nodeToName":'Devaki',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "363"],
@@ -6194,7 +7054,9 @@ var json = [
     {
       "nodeTo":"243",
       "data" :{
+          "nodeToName":'Subhadra',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "243"],
@@ -6203,7 +7065,9 @@ var json = [
     {
       "nodeTo":"364",
       "data" :{
+          "nodeToName":'Baldev (Balram)',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "364"],
@@ -6212,7 +7076,9 @@ var json = [
     {
       "nodeTo":"365",
       "data" :{
+          "nodeToName":'Bhishmak',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "365"],
@@ -6221,7 +7087,9 @@ var json = [
     {
       "nodeTo":"245",
       "data" :{
+          "nodeToName":'Ulupi',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "245"],
@@ -6230,7 +7098,9 @@ var json = [
     {
       "nodeTo":"246",
       "data" :{
+          "nodeToName":'Devika',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "246"],
@@ -6239,7 +7109,9 @@ var json = [
     {
       "nodeTo":"367",
       "data" :{
+          "nodeToName":'Sachi',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "367"],
@@ -6248,7 +7120,9 @@ var json = [
     {
       "nodeTo":"247",
       "data" :{
+          "nodeToName":'Balandhara',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "247"],
@@ -6257,7 +7131,9 @@ var json = [
     {
       "nodeTo":"368",
       "data" :{
+          "nodeToName":'Kanva',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "368"],
@@ -6266,7 +7142,9 @@ var json = [
     {
       "nodeTo":"248",
       "data" :{
+          "nodeToName":'Hidamba',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "248"],
@@ -6275,7 +7153,9 @@ var json = [
     {
       "nodeTo":"249",
       "data" :{
+          "nodeToName":'karenumati',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "249"],
@@ -6284,7 +7164,9 @@ var json = [
     {
       "nodeTo":"22",
       "data" :{
+          "nodeToName":'virani',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "22"],
@@ -6293,7 +7175,9 @@ var json = [
     {
       "nodeTo":"250",
       "data" :{
+          "nodeToName":'Vijaya',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "250"],
@@ -6302,7 +7186,9 @@ var json = [
     {
       "nodeTo":"132",
       "data" :{
+          "nodeToName":'jarasangh',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "132"],
@@ -6311,7 +7197,9 @@ var json = [
     {
       "nodeTo":"375",
       "data" :{
+          "nodeToName":'Jabali',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "375"],
@@ -6320,7 +7208,9 @@ var json = [
     {
       "nodeTo":"36",
       "data" :{
+          "nodeToName":'krupachary',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "36"],
@@ -6329,7 +7219,9 @@ var json = [
     {
       "nodeTo":"383",
       "data" :{
+          "nodeToName":'Devhuti',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "383"],
@@ -6338,7 +7230,9 @@ var json = [
     {
       "nodeTo":"384",
       "data" :{
+          "nodeToName":'Lopamudra',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "384"],
@@ -6347,7 +7241,9 @@ var json = [
     {
       "nodeTo":"264",
       "data" :{
+          "nodeToName":'Uttara',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "264"],
@@ -6356,7 +7252,9 @@ var json = [
     {
       "nodeTo":"269",
       "data" :{
+          "nodeToName":'Madravati',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "269"],
@@ -6365,7 +7263,9 @@ var json = [
     {
       "nodeTo":"392",
       "data" :{
+          "nodeToName":'Kaikeshi',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "392"],
@@ -6374,7 +7274,9 @@ var json = [
     {
       "nodeTo":"51",
       "data" :{
+          "nodeToName":'garud',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "51"],
@@ -6383,7 +7285,9 @@ var json = [
     {
       "nodeTo":"52",
       "data" :{
+          "nodeToName":'arun',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "52"],
@@ -6392,7 +7296,9 @@ var json = [
     {
       "nodeTo":"287",
       "data" :{
+          "nodeToName":'prapti',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "287"],
@@ -6401,7 +7307,9 @@ var json = [
     {
       "nodeTo":"288",
       "data" :{
+          "nodeToName":'rati',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "288"],
@@ -6410,7 +7318,9 @@ var json = [
     {
       "nodeTo":"168",
       "data" :{
+          "nodeToName":'sarvabhavani',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "168"],
@@ -6419,7 +7329,9 @@ var json = [
     {
       "nodeTo":"289",
       "data" :{
+          "nodeToName":'nanda',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "289"],
@@ -6428,7 +7340,9 @@ var json = [
     {
       "nodeTo":"290",
       "data" :{
+          "nodeToName":'parishrami',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "290"],
@@ -6437,7 +7351,9 @@ var json = [
     {
       "nodeTo":"299",
       "data" :{
+          "nodeToName":'Aaruni',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "299"],
@@ -6446,7 +7362,9 @@ var json = [
     {
       "nodeTo":"86",
       "data" :{
+          "nodeToName":'shailya',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "86"],
@@ -6455,7 +7373,9 @@ var json = [
     {
       "nodeTo":"87",
       "data" :{
+          "nodeToName":'Dhrushtketu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "87"],
@@ -6464,7 +7384,9 @@ var json = [
     {
       "nodeTo":"88",
       "data" :{
+          "nodeToName":'Daitya drum',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "88"],
@@ -6473,7 +7395,9 @@ var json = [
     {
       "nodeTo":"89",
       "data" :{
+          "nodeToName":'Bhagdatta',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "89"],
@@ -6482,7 +7406,9 @@ var json = [
     {
       "nodeTo":"90",
       "data" :{
+          "nodeToName":'shishupal',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["0", "90"],
@@ -6507,7 +7433,9 @@ var json = [
     {
       "nodeTo":"176",
       "data" :{
+          "nodeToName":'devyani',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["301", "176"],
@@ -6516,7 +7444,9 @@ var json = [
     {
       "nodeTo":"292",
       "data" :{
+            "nodeToName":'shukracharya',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -6530,7 +7460,9 @@ var json = [
     {
       "nodeTo":"303",
       "data" :{
+          "nodeToName":'parshuram',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["304", "303"],
@@ -6539,7 +7471,9 @@ var json = [
     {
       "nodeTo":"302",
       "data" :{
+            "nodeToName":'Jamadagni',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -6553,7 +7487,9 @@ var json = [
     {
       "nodeTo":"327",
       "data" :{
+          "nodeToName":'Bhay',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["325", "327"],
@@ -6562,7 +7498,9 @@ var json = [
     {
       "nodeTo":"328",
       "data" :{
+          "nodeToName":'Mahabhay',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["325", "328"],
@@ -6571,7 +7509,9 @@ var json = [
     {
       "nodeTo":"329",
       "data" :{
+          "nodeToName":'Mrutyu',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["325", "329"],
@@ -6580,7 +7520,9 @@ var json = [
     {
       "nodeTo":"326",
       "data" :{
+            "nodeToName":'Nairurta',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -6618,7 +7560,9 @@ var json = [
     {
       "nodeTo":"327",
       "data" :{
+          "nodeToName":'Bhay',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["326", "327"],
@@ -6627,7 +7571,9 @@ var json = [
     {
       "nodeTo":"328",
       "data" :{
+          "nodeToName":'Mahabhay',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["326", "328"],
@@ -6636,7 +7582,9 @@ var json = [
     {
       "nodeTo":"329",
       "data" :{
+          "nodeToName":'Mrutyu',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["326", "329"],
@@ -6645,7 +7593,9 @@ var json = [
     {
       "nodeTo":"325",
       "data" :{
+            "nodeToName":'Adharm',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -6659,7 +7609,9 @@ var json = [
     {
       "nodeTo":"331",
       "data" :{
+          "nodeToName":'Dron',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["330", "331"],
@@ -6676,7 +7628,9 @@ var json = [
     {
       "nodeTo":"332",
       "data" :{
+          "nodeToName":'Ashvathama',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["331", "332"],
@@ -6717,7 +7671,9 @@ var json = [
     {
       "nodeTo":"244",
       "data" :{
+          "nodeToName":'Draupadi',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["335", "244"],
@@ -6734,7 +7690,9 @@ var json = [
     {
       "nodeTo":"253",
       "data" :{
+          "nodeToName":'Prativindhya',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["244", "253"],
@@ -6743,7 +7701,9 @@ var json = [
     {
       "nodeTo":"254",
       "data" :{
+          "nodeToName":'Sutsome',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["244", "254"],
@@ -6752,7 +7712,9 @@ var json = [
     {
       "nodeTo":"255",
       "data" :{
+          "nodeToName":'ShrutKirti',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["244", "255"],
@@ -6761,7 +7723,9 @@ var json = [
     {
       "nodeTo":"256",
       "data" :{
+          "nodeToName":'Shatanik',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["244", "256"],
@@ -6770,7 +7734,9 @@ var json = [
     {
       "nodeTo":"257",
       "data" :{
+          "nodeToName":'Shrutkarma',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["244", "257"],
@@ -6779,31 +7745,41 @@ var json = [
     {
       "nodeTo":"235",
       "data" :{
+            "nodeToName":'Arjun',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },
     {
       "nodeTo":"236",
       "data" :{
+            "nodeToName":'Yudhishthir',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },
     {
       "nodeTo":"237",
       "data" :{
+            "nodeToName":'bhim',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },
     {
       "nodeTo":"238",
       "data" :{
+            "nodeToName":'Nakul',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },
     {
       "nodeTo":"239",
       "data" :{
+            "nodeToName":'Sahadev',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -6825,7 +7801,9 @@ var json = [
     {
       "nodeTo":"70",
       "data" :{
+          "nodeToName":'kansa',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["337", "70"],
@@ -6850,7 +7828,9 @@ var json = [
     {
       "nodeTo":"218",
       "data" :{
+          "nodeToName":'Vichitravirya',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["217", "218"],
@@ -6859,7 +7839,9 @@ var json = [
     {
       "nodeTo":"221",
       "data" :{
+          "nodeToName":'Chitrangad',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["217", "221"],
@@ -6868,7 +7850,9 @@ var json = [
     {
       "nodeTo":"222",
       "data" :{
+          "nodeToName":'Maharshi Vyas',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["217", "222"],
@@ -6877,7 +7861,9 @@ var json = [
     {
       "nodeTo":"215",
       "data" :{
+            "nodeToName":'shantanu',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -6907,7 +7893,9 @@ var json = [
     {
       "nodeTo":"220",
       "data" :{
+          "nodeToName":'bhishma',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["219", "220"],
@@ -6916,7 +7904,9 @@ var json = [
     {
       "nodeTo":"215",
       "data" :{
+            "nodeToName":'shantanu',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -6946,7 +7936,9 @@ var json = [
     {
       "nodeTo":"343",
       "data" :{
+          "nodeToName":'Hansa',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["342", "343"],
@@ -6979,7 +7971,9 @@ var json = [
     {
       "nodeTo":"226",
       "data" :{
+          "nodeToName":'Dhrutrashtra',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["224", "226"],
@@ -6988,7 +7982,9 @@ var json = [
     {
       "nodeTo":"218",
       "data" :{
+            "nodeToName":'Vichitravirya',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7002,7 +7998,9 @@ var json = [
     {
       "nodeTo":"232",
       "data" :{
+          "nodeToName":'Pandu',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["225", "232"],
@@ -7011,7 +8009,9 @@ var json = [
     {
       "nodeTo":"218",
       "data" :{
+            "nodeToName":'Vichitravirya',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7025,7 +8025,9 @@ var json = [
     {
       "nodeTo":"345",
       "data" :{
+          "nodeToName":'Yuyutsu',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["346", "345"],
@@ -7050,7 +8052,9 @@ var json = [
     {
       "nodeTo":"347",
       "data" :{
+            "nodeToName":'dushala',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -7080,7 +8084,9 @@ var json = [
     {
       "nodeTo":"352",
       "data" :{
+          "nodeToName":'Varcha',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["351", "352"],
@@ -7105,7 +8111,9 @@ var json = [
     {
       "nodeTo":"347",
       "data" :{
+          "nodeToName":'dushala',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["231", "347"],
@@ -7114,7 +8122,9 @@ var json = [
     {
       "nodeTo":"227",
       "data" :{
+          "nodeToName":'Duryodhan',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["231", "227"],
@@ -7123,7 +8133,9 @@ var json = [
     {
       "nodeTo":"228",
       "data" :{
+          "nodeToName":'Duhshashan',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["231", "228"],
@@ -7132,7 +8144,9 @@ var json = [
     {
       "nodeTo":"229",
       "data" :{
+          "nodeToName":'Vikarna',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["231", "229"],
@@ -7141,7 +8155,9 @@ var json = [
     {
       "nodeTo":"230",
       "data" :{
+          "nodeToName":'Chitrasen',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["231", "230"],
@@ -7174,7 +8190,9 @@ var json = [
     {
       "nodeTo":"238",
       "data" :{
+          "nodeToName":'Nakul',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["234", "238"],
@@ -7183,7 +8201,9 @@ var json = [
     {
       "nodeTo":"239",
       "data" :{
+          "nodeToName":'Sahadev',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["234", "239"],
@@ -7192,7 +8212,9 @@ var json = [
     {
       "nodeTo":"232",
       "data" :{
+            "nodeToName":'Pandu',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7206,7 +8228,9 @@ var json = [
     {
       "nodeTo":"356",
       "data" :{
+          "nodeToName":'Vasudev',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["355", "356"],
@@ -7223,7 +8247,9 @@ var json = [
     {
       "nodeTo":"362",
       "data" :{
+          "nodeToName":'Krushna',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["356", "362"],
@@ -7232,7 +8258,9 @@ var json = [
     {
       "nodeTo":"363",
       "data" :{
+            "nodeToName":'Devaki',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -7246,7 +8274,9 @@ var json = [
     {
       "nodeTo":"366",
       "data" :{
+            "nodeToName":'Rukmanidevi',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -7268,7 +8298,9 @@ var json = [
     {
       "nodeTo":"360",
       "data" :{
+            "nodeToName":'Adhirath',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7282,7 +8314,9 @@ var json = [
     {
       "nodeTo":"359",
       "data" :{
+            "nodeToName":'Radha',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -7304,7 +8338,9 @@ var json = [
     {
       "nodeTo":"306",
       "data" :{
+          "nodeToName":'Ashvinikumar',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["241", "306"],
@@ -7313,7 +8349,9 @@ var json = [
     {
       "nodeTo":"305",
       "data" :{
+            "nodeToName":'Sangya  Saravyu  Vadavarupdharini',
           "$color":"#007f00",
+          "relation":"wife",
       },
     },]
 },
@@ -7327,7 +8365,9 @@ var json = [
     {
       "nodeTo":"251",
       "data" :{
+          "nodeToName":'Babhruvahan',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["242", "251"],
@@ -7336,7 +8376,9 @@ var json = [
     {
       "nodeTo":"235",
       "data" :{
+            "nodeToName":'Arjun',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7350,7 +8392,9 @@ var json = [
     {
       "nodeTo":"362",
       "data" :{
+          "nodeToName":'Krushna',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["363", "362"],
@@ -7359,7 +8403,9 @@ var json = [
     {
       "nodeTo":"356",
       "data" :{
+            "nodeToName":'Vasudev',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7373,7 +8419,9 @@ var json = [
     {
       "nodeTo":"252",
       "data" :{
+          "nodeToName":'Abhimanyu',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["243", "252"],
@@ -7382,7 +8430,9 @@ var json = [
     {
       "nodeTo":"235",
       "data" :{
+            "nodeToName":'Arjun',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7404,7 +8454,9 @@ var json = [
     {
       "nodeTo":"366",
       "data" :{
+          "nodeToName":'Rukmanidevi',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["365", "366"],
@@ -7421,7 +8473,9 @@ var json = [
     {
       "nodeTo":"362",
       "data" :{
+            "nodeToName":'Krushna',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7435,7 +8489,9 @@ var json = [
     {
       "nodeTo":"258",
       "data" :{
+          "nodeToName":'Idavan',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["245", "258"],
@@ -7444,7 +8500,9 @@ var json = [
     {
       "nodeTo":"235",
       "data" :{
+            "nodeToName":'Arjun',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7458,7 +8516,9 @@ var json = [
     {
       "nodeTo":"259",
       "data" :{
+          "nodeToName":'Yodhey',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["246", "259"],
@@ -7467,7 +8527,9 @@ var json = [
     {
       "nodeTo":"236",
       "data" :{
+            "nodeToName":'Yudhishthir',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7489,7 +8551,9 @@ var json = [
     {
       "nodeTo":"260",
       "data" :{
+          "nodeToName":'Sarvag',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["247", "260"],
@@ -7498,7 +8562,9 @@ var json = [
     {
       "nodeTo":"237",
       "data" :{
+            "nodeToName":'bhim',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7512,7 +8578,9 @@ var json = [
     {
       "nodeTo":"369",
       "data" :{
+          "nodeToName":'Aashram of Kanva',
           "$color":"#0000ff",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["368", "369"],
@@ -7537,7 +8605,9 @@ var json = [
     {
       "nodeTo":"261",
       "data" :{
+          "nodeToName":'Ghatotkach',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["248", "261"],
@@ -7546,7 +8616,9 @@ var json = [
     {
       "nodeTo":"237",
       "data" :{
+            "nodeToName":'bhim',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7560,7 +8632,9 @@ var json = [
     {
       "nodeTo":"262",
       "data" :{
+          "nodeToName":'Nirmitra',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["249", "262"],
@@ -7569,7 +8643,9 @@ var json = [
     {
       "nodeTo":"238",
       "data" :{
+            "nodeToName":'Nakul',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7583,7 +8659,9 @@ var json = [
     {
       "nodeTo":"21",
       "data" :{
+            "nodeToName":'Prachetas Daksh',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7597,7 +8675,9 @@ var json = [
     {
       "nodeTo":"263",
       "data" :{
+          "nodeToName":'Suhotra',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["250", "263"],
@@ -7606,7 +8686,9 @@ var json = [
     {
       "nodeTo":"239",
       "data" :{
+            "nodeToName":'Sahadev',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7628,7 +8710,9 @@ var json = [
     {
       "nodeTo":"374",
       "data" :{
+          "nodeToName":'Pinjala (Vatika)',
           "$color":"#0000ff",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["375", "374"],
@@ -7645,7 +8729,9 @@ var json = [
     {
       "nodeTo":"376",
       "data" :{
+          "nodeToName":'sukhdevji',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["374", "376"],
@@ -7654,7 +8740,9 @@ var json = [
     {
       "nodeTo":"222",
       "data" :{
+            "nodeToName":'Maharshi Vyas',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7676,7 +8764,9 @@ var json = [
     {
       "nodeTo":"373",
       "data" :{
+          "nodeToName":'Arundhati',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["383", "373"],
@@ -7693,7 +8783,9 @@ var json = [
     {
       "nodeTo":"379",
       "data" :{
+            "nodeToName":'Agatsya',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7707,7 +8799,9 @@ var json = [
     {
       "nodeTo":"265",
       "data" :{
+          "nodeToName":'parikshit',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["264", "265"],
@@ -7716,7 +8810,9 @@ var json = [
     {
       "nodeTo":"252",
       "data" :{
+            "nodeToName":'Abhimanyu',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7730,7 +8826,9 @@ var json = [
     {
       "nodeTo":"270",
       "data" :{
+          "nodeToName":'janmejay',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["269", "270"],
@@ -7739,7 +8837,9 @@ var json = [
     {
       "nodeTo":"265",
       "data" :{
+            "nodeToName":'parikshit',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7753,7 +8853,9 @@ var json = [
     {
       "nodeTo":"386",
       "data" :{
+          "nodeToName":'Vibhishan',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["392", "386"],
@@ -7762,7 +8864,9 @@ var json = [
     {
       "nodeTo":"388",
       "data" :{
+          "nodeToName":'Ravan',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["392", "388"],
@@ -7771,7 +8875,9 @@ var json = [
     {
       "nodeTo":"389",
       "data" :{
+          "nodeToName":'Kumnhakarna',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["392", "389"],
@@ -7780,7 +8886,9 @@ var json = [
     {
       "nodeTo":"390",
       "data" :{
+          "nodeToName":'Surpankha',
           "$color":"#ff0000",
+          "relation":"daughter",
           "$type":"arrow",
           "$dim":10,
           "$direction":["392", "390"],
@@ -7789,7 +8897,9 @@ var json = [
     {
       "nodeTo":"385",
       "data" :{
+            "nodeToName":'Visravas',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7803,7 +8913,9 @@ var json = [
     {
       "nodeTo":"284",
       "data" :{
+            "nodeToName":'Sham',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7817,7 +8929,9 @@ var json = [
     {
       "nodeTo":"285",
       "data" :{
+            "nodeToName":'Kaam',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7831,7 +8945,9 @@ var json = [
     {
       "nodeTo":"169",
       "data" :{
+          "nodeToName":'Nahush',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["168", "169"],
@@ -7840,7 +8956,9 @@ var json = [
     {
       "nodeTo":"167",
       "data" :{
+            "nodeToName":'Aayu',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7854,7 +8972,9 @@ var json = [
     {
       "nodeTo":"286",
       "data" :{
+            "nodeToName":'harsh',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7868,7 +8988,9 @@ var json = [
     {
       "nodeTo":"291",
       "data" :{
+          "nodeToName":'vidur',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["290", "291"],
@@ -7885,7 +9007,9 @@ var json = [
     {
       "nodeTo":"293",
       "data" :{
+            "nodeToName":'Chyavan',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },
@@ -7939,7 +9063,9 @@ var json = [
     {
       "nodeTo":"235",
       "data" :{
+          "nodeToName":'Arjun',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["233", "235"],
@@ -7948,7 +9074,9 @@ var json = [
     {
       "nodeTo":"236",
       "data" :{
+          "nodeToName":'Yudhishthir',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["233", "236"],
@@ -7957,7 +9085,9 @@ var json = [
     {
       "nodeTo":"237",
       "data" :{
+          "nodeToName":'bhim',
           "$color":"#ff0000",
+          "relation":"son",
           "$type":"arrow",
           "$dim":10,
           "$direction":["233", "237"],
@@ -7966,7 +9096,9 @@ var json = [
     {
       "nodeTo":"232",
       "data" :{
+            "nodeToName":'Pandu',
           "$color":"#007f00",
+          "relation":"husband",
       },
     },]
 },

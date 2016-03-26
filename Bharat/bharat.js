@@ -35,6 +35,12 @@ function init(){
 //    ];
     //end
     
+    var allNames = [];
+    var nameIdMap = new Object();
+    var centerNode;
+    var current_son = [];
+    var current_daughter = [];
+    
     //init RGraph
     var rgraph = new $jit.RGraph({
         //Where to append the visualization
@@ -62,14 +68,14 @@ function init(){
         fps: 30,
                 
         //Change father-child distance.
-        levelDistance: 200,
+        levelDistance: 400,
         
         //Add navigation capabilities:
         //zooming by scrolling and panning.
         Navigation: {
           enable: true,
           panning: true,
-          zooming: 50
+          zooming: 10
         },
         //Set Node and Edge styles.
         Node: {
@@ -101,7 +107,6 @@ function init(){
             if(nodeFrom._depth >=2) { 
                 // adj.data.$color = "#772277";
                 // adj.data.$alpha = "0.1";
-                // adj.display = "none"
             } else { 
                 //delete adj.data.$color; //fall back to default edge color. 
             } 
@@ -124,8 +129,25 @@ function init(){
         onCreateLabel: function(domElement, node){
             domElement.innerHTML = "<i>" + node.name + "</i>";
             //domElement.className += ' rcorners'
+            allNames.push(node.name);
+            nameIdMap[node.name] = node.id;
+            
+            $( "#searchtag" ).autocomplete({
+                source: allNames,
+                select: function (a, b) {
+                            //$(this).val(b.item.value);
+                            var id = nameIdMap[b.item.value];
+                            centerNode = id;
+                            rgraph.onClick(id, {
+                                onComplete: function() {
+                                    Log.write("done");
+                                }
+                            });
+                        }
+            });
             
             domElement.onclick = function(){
+                centerNode = node.id;
                 rgraph.onClick(node.id, {
                     onComplete: function() {
                         Log.write("done");
@@ -142,38 +164,82 @@ function init(){
             style.cursor = 'pointer';
             style.color = "#ffff00";
 
+            if (node.data.gender == "female")
+            {
+                style.color = "#7f7fff";                
+            }
+            
             if (node._depth < 1) {
                 style.fontSize = "2.5em";
                 //style.color = "#ffff00";
-                node.eachAdjacency(function(adj){   adj.data.$alpha = "1";});
+                centerNode = node.id;
+                current_son = [];
+                current_daughter = [];
+                node.eachAdjacency(function(adj){ 
+                      adj.data.$alpha = "1";
+
+                      if (adj.data.relation == "son")
+                      {
+                         current_son.push(node.id);
+                         //style.color = "#ff0000";
+                      }
+                      else if (adj.data.relation == "daughter")
+                      {
+                         current_daughter.push(node.id);
+                         //style.color = "#0000ff";
+                      }
+                      
+                    });
             } else if(node._depth < 2){
-                style.fontSize = "1em";
-                //style.color = "#ffffff";
-                node.eachAdjacency(function(adj){   adj.data.$alpha = "1";});
+                style.fontSize = "1.5em";
+                node.eachAdjacency(function(adj){   
+                    adj.data.$alpha = "1";
+                    if (adj.nodeTo.id == centerNode)
+                    {
+                           if (adj.data.relation == "wife")
+                           {
+                               style.color = "#007f00";
+                           }
+
+                           else if (adj.data.relation == "husband")
+                           {
+                               style.color = "#00ff00";
+                           }
+
+                           else if (adj.data.relation == "son")
+                           {  
+                              // parent 
+                              //style.color = "#ff0000";
+                           }
+                           
+                           else if (adj.data.relation == "daughter")
+                           {
+                              // parent
+                              //style.color = "#0000ff";
+                           }
+                    }
+                    
+                });
+                
             } else if(node._depth < 3) {
-                style.fontSize = "0.5em";
+                style.fontSize = "1em";
                 node.eachAdjacency(function(adj){   adj.data.$alpha = "0.1";});
                 //style.color = "#ffffff";
                       
             } else {
                 node.eachAdjacency(function(adj){   adj.data.$alpha = "0.1";});
-                style.fontSize = "0.2em";
+                style.fontSize = "1em";
                 //style.color = "#7f7f7f";
                 //style.display = 'none';
             }
             
-            if (node.data.gender == "female")
-            {
-                style.color = "#7f7fff";                
-            }
-
             var left = parseInt(style.left);
             var w = domElement.offsetWidth;
             var top = parseInt(style.top);
             var h = domElement.offsetHeight;
             
             style.left = (left - w / 2) + 'px';
-            style.top = (top - h / 2) + 'px'
+            style.top = (top + h / 4) + 'px'
         }
     });
     //load JSON data
@@ -186,7 +252,7 @@ function init(){
     rgraph.compute('end');
     rgraph.fx.animate({
       modes:['polar'],
-      duration: 2000
+      duration: 1500
     });
     //end
     //append information about the root relations in the right column
