@@ -42,6 +42,14 @@ a {
     top:0;
 }
 
+#search-container {
+    position:absolute;
+    text-align: left;
+    top:20px;
+    left:20px;
+    z-index: 2;
+}
+
 .rcorners {
     border-radius: 25px;
     border: 1px solid #73AD21;
