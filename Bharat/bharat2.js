@@ -15,17 +15,23 @@ var labelType, useGradients, nativeTextSupport, animate;
   animate = !(iStuff || !nativeCanvasSupport);
 })();
 
-$(document).on('pagebeforecreate', '[data-role="page"]', function(){     
-    setTimeout(function(){
-        $.mobile.loading('show');
-    },1);    
+
+function adjustStyle(width) {
+  width = parseInt(width);
+  if (width < 900) {
+    $("#size-stylesheet").attr("href", "css_mobile/RGraph.css");
+  } else {
+     $("#size-stylesheet").attr("href", "css/RGraph.css"); 
+  }
+}
+
+$(function() {
+  adjustStyle($(this).width());
+  $(window).resize(function() {
+    adjustStyle($(this).width());
+  });
 });
 
-$(document).on('pageshow', '[data-role="page"]', function(){  
-    setTimeout(function(){
-        $.mobile.loading('hide');
-    },300);      
-});
 
 var Log = {
   elem: false,
