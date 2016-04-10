@@ -112,7 +112,7 @@ function init(){
             enable: true,  
             type: 'Native',  
             onMouseEnter: function(node, eventInfo, e){  
-                rgraph.canvas.getElement().style.cursor = 'move';  
+                rgraph.canvas.getElement().style.cursor = 'move';
             },  
             onMouseLeave: function(node, eventInfo, e){  
                 rgraph.canvas.getElement().style.cursor = '';  
@@ -121,6 +121,8 @@ function init(){
                 var pos = eventInfo.getPos();  
                 node.pos.setc(pos.x, pos.y);  
                 rgraph.plot();  
+                
+
             },  
             onDragEnd: function(node, eventInfo, e){  
                 //rgraph.compute('end');  
@@ -136,6 +138,8 @@ function init(){
             onTouchStart: function(node, eventInfo, e) {  
                 //stop the default event  
                 $jit.util.event.stop(e);
+                
+                
                 
                 if(e.touches.length == 2) {
                     scaling = true;
@@ -156,8 +160,11 @@ function init(){
                     var dist = Math.sqrt(
                         (e.touches[0].x-e.touches[1].x) * (e.touches[0].x-e.touches[1].x) +
                         (e.touches[0].y-e.touches[1].y) * (e.touches[0].y-e.touches[1].y));
+                        
+                    //this.onMouseWheel(e,window,dist);
                     
-                    var val = this.config.zooming / 1000,
+                    var val = this.controller.Navigation.zooming/1000; 
+                    //var val = this.config.zooming / 1000,
                     ans = 1 + dist * val;
                     this.canvas.scale(ans, ans);
                 }
