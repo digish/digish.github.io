@@ -27,6 +27,8 @@ var Log = {
 };
 
 
+
+
 function init(){
     //init data
 //    var json = [
@@ -42,6 +44,8 @@ function init(){
     var centerNode;
     var current_son = [];
     var current_daughter = [];
+    var scaling = false;
+
     
     //init RGraph
     var rgraph = new $jit.RGraph({
@@ -80,6 +84,9 @@ function init(){
           //panning: 'avoid nodes', 
           zooming: 10
         },
+        
+        
+        
         //Set Node and Edge styles.
         Node: {
            'overridable': true,
@@ -97,6 +104,8 @@ function init(){
           'dim' : 10,
           //type: 'bezier',
         },
+        
+        
 
         //Add events for Dragging and dropping nodes  
         Events: {  
@@ -125,30 +134,52 @@ function init(){
             },  
             //touch events  
             onTouchStart: function(node, eventInfo, e) {  
-            //stop the default event  
-            $jit.util.event.stop(e);  
+                //stop the default event  
+                $jit.util.event.stop(e);
+                
+                if(e.touches.length == 2) {
+                    scaling = true;
+                    //pinchStart(e);
+
+                }
             },  
             onTouchMove: function(node, eventInfo, e){  
-            //stop the default event  
-            $jit.util.event.stop(e);  
-            var pos = eventInfo.getPos();  
-            node.pos.setc(pos.x, pos.y);  
-            rgraph.plot();  
+                //stop the default event  
+                $jit.util.event.stop(e);  
+                // position node
+                var pos = eventInfo.getPos();  
+                node.pos.setc(pos.x, pos.y);  
+                rgraph.plot();
+                // do scalling
+                if(scaling) {
+                    //pinchMove(e);
+                    var dist = Math.sqrt(
+                        (e.touches[0].x-e.touches[1].x) * (e.touches[0].x-e.touches[1].x) +
+                        (e.touches[0].y-e.touches[1].y) * (e.touches[0].y-e.touches[1].y));
+                    
+                    var val = this.config.zooming / 1000,
+                    ans = 1 + dist * val;
+                    this.canvas.scale(ans, ans);
+                }
             },  
             onTouchEnd: function(node, eventInfo, e){  
-            //stop the default event  
-            
-            $jit.util.event.stop(e);  
-            /*
-            rgraph.compute('end');  
-            rgraph.fx.animate( {  
-                modes: [  
-                'linear'  
-                ],  
-                duration: 700,  
-                transition: $jit.Trans.Elastic.easeOut  
-            });
-             */
+                //stop the default event
+                $jit.util.event.stop(e);
+                /*
+                rgraph.compute('end');  
+                rgraph.fx.animate( {  
+                    modes: [  
+                    'linear'  
+                    ],  
+                    duration: 700,  
+                    transition: $jit.Trans.Elastic.easeOut  
+                });
+                */
+                
+                if(scaling) {
+                    //pinchEnd(e);
+                    scaling = false;
+                }
             }  
         },
 
@@ -413,6 +444,9 @@ function init(){
             style.top = (top + h / 4) + 'px'
         }
     });
+    
+
+
     //load JSON data
     rgraph.loadJSON(json);
     //trigger small animation
