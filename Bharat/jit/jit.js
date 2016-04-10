@@ -11745,7 +11745,7 @@ Layouts.Radial = new Class({
       for (var k = 0, ls=subnodes.length; k < ls; k++) {
         var child = subnodes[k];
         if (!child._flag) {
-          var angleProportion = child._treeAngularWidth / totalAngularWidths * angleSpan + 3.14/80;
+          var angleProportion = child._treeAngularWidth / totalAngularWidths * angleSpan + 3.14/7; // digish
           var theta = angleInit + angleProportion / 2;
 
           for ( var i=0, l=propArray.length; i < l; i++) {
