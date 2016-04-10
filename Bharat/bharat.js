@@ -157,6 +157,7 @@ function init(){
                 // do scalling
                 if(scaling) {
                     //pinchMove(e);
+                    /*
                     var dist = Math.sqrt(
                         (e.touches[0].x-e.touches[1].x) * (e.touches[0].x-e.touches[1].x) +
                         (e.touches[0].y-e.touches[1].y) * (e.touches[0].y-e.touches[1].y));
@@ -167,6 +168,7 @@ function init(){
                     //var val = this.config.zooming / 1000,
                     var ans = 1 + dist * val;
                     this.canvas.scale(ans, ans);
+                    */
                 }
             },  
             onTouchEnd: function(node, eventInfo, e){  
