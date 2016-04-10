@@ -1,0 +1,182 @@
+.node {
+  color:#fff;
+  font-size:9px;
+  overflow:hidden;
+  cursor:pointer;
+
+
+  text-shadow:2px 2px 5px #BDBDBD;
+  -o-text-shadow:2px 2px 5px #BDBDBD;
+  -webkit-text-shadow:2px 2px 5px #BDBDBD;
+  -moz-text-shadow:2px 2px 5px #BDBDBD;
+
+}
+
+
+.ticket {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: italic;
+    position: relative !important;
+    opacity:0.7;
+    background: #4DD0E1;
+    float: left;
+    padding: 7px 3px;
+    text-shadow: 0px 0px 0.5px #000000;
+    margin: 0 5px 5px 0;
+    
+    /*-ms-transform: rotate(5deg); 
+     -webkit-transform: rotate(5deg);
+     transform: rotate(5deg); */
+}
+
+
+.style_search_container {
+    position:absolute;
+    
+    top:20px;
+    left:20px;
+    z-index: 2;
+    font: normal 25px/1 "Aladin", Helvetica, sans-serif;
+    box-shadow: 10px 10px 5px rgba(4,3,140,0.5);
+    border-radius: 15px 50px;
+    border: 1px solid #03A9F4;
+}
+
+.style_search_box {
+    
+  text-align: left;
+  z-index: 2;
+  border-radius: 15px 50px;
+  outline:solid 0px;
+  padding-left: 20px;
+  background: rgba(200,200,255,0.8);
+  
+  
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal 20px/1 "Aladin", Helvetica, sans-serif;
+  color: #00796B;
+  text-transform: normal;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 1px 1px 1 #80CBC4 , -1px -1px -1px #B2DFDB ;
+
+}
+
+
+
+.style_relation a {
+    font: 15px Tahoma, Helvetica, Arial, Sans-Serif;
+    text-align: center;
+    color: #78909C;
+    text-shadow: 0px 2px 3px #CFD8DC;
+}
+.ticket_relation {
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: italic;
+    position: relative !important;
+    opacity:0.7;
+    background: #FFD54F;
+    float: left;
+    padding: 7px 3px;
+    text-shadow: 0px 0px 0.5px #000000;
+    margin: 0 5px 5px 0;
+    
+    /*-ms-transform: rotate(5deg); 
+     -webkit-transform: rotate(5deg);
+     transform: rotate(5deg); */
+}
+
+
+.ticket:after, .ticket_relation:after{
+    content: "";
+    position: absolute !important;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    /*
+    border-right: #1a1a1a 7px solid;
+    border-bottom: #1a1a1a 7px solid;
+    -moz-border-radius: 0 0 20px 0;
+    -webkit-border-radius: 0 0 20px 0;
+    border-radius: 0 0 20px 0;*/
+}
+ 
+.ticket:before, .ticket_relation:before {
+    content: "";
+    position: absolute !important;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    /*
+    border-left: #1a1a1a 7px solid;
+    border-bottom: #1a1a1a 7px solid;
+    -moz-border-radius: 0 0 0 20px;
+    -webkit-border-radius: 0 0 0 20px;
+    border-radius: 0 0 0 20px;*/
+}
+.ticket a, .ticket_relation a{
+    outline: 1px rgba(255,255,255,0.4) dashed;
+    border: 1px rgba(0,0,0,0.3) dashed;
+    padding: 4px 10px 4px 20px;
+    text-decoration: none;
+    color: rgba(0,0,0,0.5);
+    white-space: nowrap;
+}
+ 
+.ticket a:hover, .ticket_relation a:hover {color: rgba(0,0,0,0.7);}
+
+
+.ticket a:after, .ticket_relation a:after{
+    content: "";
+    position: absolute !important;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    /*
+    border-right: #1a1a1a 7px solid;
+    border-top: #1a1a1a 7px solid;
+    -moz-border-radius: 0 20px 0 0;
+    -webkit-border-radius: 0 20px 0 0;
+    border-radius: 0 20px 0 0;*/
+}
+ 
+.ticket a:before, .ticket_relation a:before {
+    content: "";
+    position: absolute !important;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    /*
+    border-left: #1a1a1a 7px solid;
+    border-top: #1a1a1a 7px solid;
+    -moz-border-radius: 20px 0 0 0;
+    -webkit-border-radius: 20px 0 0 0;
+    border-radius: 20px 0 0 0;*/
+}
+
+.ticket .circle , .ticket_relation .circle {
+    position: absolute !important;
+    z-index: 100;
+    border: 5px #1a1a1a solid;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: -5px;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 8px;
+    -moz-box-shadow: 0 -1px 0 rgba(0,0,0,0.5),
+        0 1px 0 rgba(255,255,255,0.3);
+    -webkit-box-shadow: 0 -1px 0 rgba(0,0,0,0.5),
+        0 1px 0 rgba(255,255,255,0.3);
+    box-shadow: 0 -1px 0 rgba(0,0,0,0.5),
+        0 1px 0 rgba(255,255,255,0.3);
+}
