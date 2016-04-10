@@ -76,7 +76,7 @@ function init(){
         //zooming by scrolling and panning.
         Navigation: {
           enable: true,
-          panning: false,
+          panning: true,
           //panning: 'avoid nodes', 
           zooming: 10
         },
