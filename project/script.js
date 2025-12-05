@@ -27,54 +27,62 @@ document.addEventListener('DOMContentLoaded', () => {
 // ====================
 
 class ScreenshotCarousel {
-    constructor(containerSelector) {
-        this.container = document.querySelector(containerSelector);
+    constructor(containerElement) {
+        this.container = containerElement;
         if (!this.container) return;
-        
+
         this.screenshots = this.container.querySelectorAll('.screenshot');
         this.dots = this.container.parentElement.querySelectorAll('.dot');
         this.currentIndex = 0;
         this.autoPlayInterval = null;
-        
+
         this.init();
     }
-    
+
     init() {
         // Add click events to dots
         this.dots.forEach((dot, index) => {
             dot.addEventListener('click', () => this.goToSlide(index));
         });
-        
+
         // Start auto-play
         this.startAutoPlay();
-        
+
         // Pause on hover
         this.container.addEventListener('mouseenter', () => this.stopAutoPlay());
         this.container.addEventListener('mouseleave', () => this.startAutoPlay());
     }
-    
+
     goToSlide(index) {
         // Remove active class from current
-        this.screenshots[this.currentIndex].classList.remove('active');
-        this.dots[this.currentIndex].classList.remove('active');
-        
+        if (this.screenshots[this.currentIndex]) {
+            this.screenshots[this.currentIndex].classList.remove('active');
+        }
+        if (this.dots[this.currentIndex]) {
+            this.dots[this.currentIndex].classList.remove('active');
+        }
+
         // Add active class to new
         this.currentIndex = index;
-        this.screenshots[this.currentIndex].classList.add('active');
-        this.dots[this.currentIndex].classList.add('active');
+        if (this.screenshots[this.currentIndex]) {
+            this.screenshots[this.currentIndex].classList.add('active');
+        }
+        if (this.dots[this.currentIndex]) {
+            this.dots[this.currentIndex].classList.add('active');
+        }
     }
-    
+
     nextSlide() {
         const nextIndex = (this.currentIndex + 1) % this.screenshots.length;
         this.goToSlide(nextIndex);
     }
-    
+
     startAutoPlay() {
         this.autoPlayInterval = setInterval(() => {
             this.nextSlide();
         }, 4000); // Change slide every 4 seconds
     }
-    
+
     stopAutoPlay() {
         if (this.autoPlayInterval) {
             clearInterval(this.autoPlayInterval);
@@ -85,7 +93,9 @@ class ScreenshotCarousel {
 
 // Initialize carousel when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new ScreenshotCarousel('.phone-mockup');
+    document.querySelectorAll('.phone-mockup').forEach(mockup => {
+        new ScreenshotCarousel(mockup);
+    });
 });
 
 // ==================== 
@@ -97,15 +107,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
-        
+
         if (targetId === '#') return;
-        
+
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             const headerOffset = 80;
             const elementPosition = targetElement.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-            
+
             window.scrollTo({
                 top: offsetPosition,
                 behavior: 'smooth'
@@ -123,7 +133,7 @@ const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
     // Add background to header on scroll
     if (currentScroll > 100) {
         header.style.background = 'rgba(10, 14, 39, 0.95)';
@@ -134,7 +144,7 @@ window.addEventListener('scroll', () => {
         header.style.backdropFilter = 'none';
         header.style.boxShadow = 'none';
     }
-    
+
     lastScroll = currentScroll;
 });
 
@@ -145,7 +155,7 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const heroBackground = document.querySelector('.hero-background');
-    
+
     if (heroBackground) {
         heroBackground.style.transform = `translateY(${scrolled * 0.5}px)`;
     }
@@ -161,10 +171,10 @@ class MouseTrail {
         this.ctx = this.canvas.getContext('2d');
         this.particles = [];
         this.mouse = { x: 0, y: 0 };
-        
+
         this.init();
     }
-    
+
     init() {
         this.canvas.style.position = 'fixed';
         this.canvas.style.top = '0';
@@ -174,25 +184,25 @@ class MouseTrail {
         this.canvas.style.pointerEvents = 'none';
         this.canvas.style.zIndex = '9999';
         this.canvas.style.opacity = '0.6';
-        
+
         document.body.appendChild(this.canvas);
-        
+
         this.resize();
         window.addEventListener('resize', () => this.resize());
         window.addEventListener('mousemove', (e) => this.onMouseMove(e));
-        
+
         this.animate();
     }
-    
+
     resize() {
         this.canvas.width = window.innerWidth;
         this.canvas.height = window.innerHeight;
     }
-    
+
     onMouseMove(e) {
         this.mouse.x = e.clientX;
         this.mouse.y = e.clientY;
-        
+
         // Create particle
         this.particles.push({
             x: this.mouse.x,
@@ -202,34 +212,34 @@ class MouseTrail {
             speedY: (Math.random() - 0.5) * 2,
             life: 1
         });
-        
+
         // Limit particles
         if (this.particles.length > 50) {
             this.particles.shift();
         }
     }
-    
+
     animate() {
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-        
+
         for (let i = this.particles.length - 1; i >= 0; i--) {
             const p = this.particles[i];
-            
+
             p.x += p.speedX;
             p.y += p.speedY;
             p.life -= 0.02;
-            
+
             if (p.life <= 0) {
                 this.particles.splice(i, 1);
                 continue;
             }
-            
+
             this.ctx.fillStyle = `rgba(99, 102, 241, ${p.life * 0.5})`;
             this.ctx.beginPath();
             this.ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
             this.ctx.fill();
         }
-        
+
         requestAnimationFrame(() => this.animate());
     }
 }
@@ -274,7 +284,7 @@ function debounce(func, wait) {
 // Throttle function for performance
 function throttle(func, limit) {
     let inThrottle;
-    return function() {
+    return function () {
         const args = arguments;
         const context = this;
         if (!inThrottle) {
@@ -295,7 +305,7 @@ const konamiPattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLef
 document.addEventListener('keydown', (e) => {
     konamiCode.push(e.key);
     konamiCode = konamiCode.slice(-10);
-    
+
     if (konamiCode.join('') === konamiPattern.join('')) {
         activateEasterEgg();
     }
@@ -304,7 +314,7 @@ document.addEventListener('keydown', (e) => {
 function activateEasterEgg() {
     // Add confetti or special effect
     document.body.style.animation = 'rainbow 2s infinite';
-    
+
     setTimeout(() => {
         document.body.style.animation = '';
     }, 5000);
