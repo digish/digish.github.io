@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swarmeter - Indian Classical Music Tuner</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         :root {
             --primary: #D35400;
             --bg: #FFF8E1;
@@ -22,8 +26,21 @@
             line-height: 1.6;
         }
 
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .bg-white {
+            background-color: var(--white);
+        }
+
+        .bg-cream {
+            background-color: var(--bg);
+        }
+
         .container {
-            max-width: 800px;
+            max-width: 1100px;
+            /* Increased from 800px to fit 3 cards in a row */
             margin: 0 auto;
             padding: 20px;
         }
@@ -79,16 +96,88 @@
             margin-top: 0;
         }
 
+        /* Gallery Layout */
         .screenshots {
             text-align: center;
             margin: 60px 0;
+            position: relative;
+            /* For absolute positioning of arrows */
+        }
+
+        .gallery-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* Gallery specific buttons */
+        .gallery-nav-btn {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+            display: none;
+            /* Hidden by default, shown via media query or JS if needed. 
+                             Actually better to be always visible or flex? */
+            display: flex;
+            /* Make flexible part of the row */
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.2s;
+        }
+
+        .gallery-nav-btn:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+
+        .screenshots h2 {
+            margin-bottom: 30px;
+        }
+
+        .screenshot-scroll {
+            display: flex;
+            overflow-x: auto;
+            gap: 30px;
+            padding: 20px 40px;
+            /* Side padding for better scroll feel */
+            scroll-snap-type: x mandatory;
+            justify-content: flex-start;
+            /* Alignment */
+
+            /* Hide scrollbar but keep functionality */
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            /* Optional: Mask/Gradient edges like the nav bar */
+            mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+        }
+
+        .screenshot-scroll::-webkit-scrollbar {
+            display: none;
         }
 
         .screenshots img {
-            max-width: 200px;
-            border-radius: 12px;
-            margin: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: none;
+            /* Override previous limit */
+            height: 500px;
+            /* Fixed height for uniformity */
+            width: auto;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            scroll-snap-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .screenshots img:hover {
+            transform: scale(1.02);
         }
 
         .support {
@@ -109,6 +198,551 @@
         a {
             color: var(--primary);
         }
+
+        /* Interactive Showcase Styles */
+        .usage-guide {
+            margin: 0;
+            /* Remove margin to allow full-width bg */
+            display: flex;
+            justify-content: center;
+            padding: 80px 20px;
+            /* Internal spacing */
+            background-color: #000;
+            /* Full Black Background */
+            color: #fff;
+            width: 100%;
+        }
+
+        .showcase-container {
+            background-color: transparent;
+            /* Blend with parent */
+            /* border-radius: 40px;  Keep radius? No, seamless looks better or keep layout bounds? */
+            /* Let's keep layout bounds but remove visual box */
+            border-radius: 0;
+            padding: 20px;
+            /* Reduce padding since we have section padding */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+            max-width: 1500px;
+            width: 100%;
+            box-shadow: none;
+            /* Remove shadow */
+            color: #fff;
+            position: relative;
+        }
+
+        /* Scroll Navigation Buttons (Generic) */
+        .scroll-nav-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            backdrop-filter: blur(5px);
+            z-index: 20;
+            transition: all 0.2s ease;
+            font-size: 1.2rem;
+            user-select: none;
+            outline: none;
+        }
+
+        .scroll-nav-btn:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.1);
+        }
+
+        .scroll-nav-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Feature List Scroll Controls (Desktop: Hidden) */
+        .feature-scroll-controls {
+            display: none;
+            /* Hidden by default on desktop */
+        }
+
+        .feature-list {
+            flex: 0 0 320px;
+            /* Slightly tighter
+        sidebar */
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            text-align: left;
+            z-index: 2;
+        }
+
+        .feature-list h2 {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            margin-top: 0;
+            font-weight: 700;
+        }
+
+        .feature-btn {
+            background:
+                rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            padding:
+                20px 30px;
+            border-radius: 40px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8,
+                    0.25, 1);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            outline: none;
+            width: 100%;
+            text-align: left;
+            font-weight: 500;
+        }
+
+        .feature-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            transform:
+                translateX(10px);
+        }
+
+        .feature-btn.active {
+            background: #fff;
+            color: #000;
+            border-color: #fff;
+            font-weight: 700;
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-btn .icon {
+            font-size: 1.5rem;
+        }
+
+        .showcase-display {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Phone
+        Container (Frameless) */
+        .phone-frame {
+            /* Removed bezel styles */
+            border: none;
+            background: transparent;
+            box-shadow: none;
+            /* User's video has the frame/depth */
+            /* Flexible size to accommodate video's aspect ratio */
+            width: 700px;
+            /* FORCE LARGE WIDTH */
+            max-width: 100%;
+            /* Responsive cap */
+            aspect-ratio: 27/32;
+            /* 810x960
+        Video Ratio */
+            overflow: hidden;
+            /* Keep rounded corners if needed, or remove */
+            position: relative;
+            transition:
+                transform 0.5s ease;
+        }
+
+        .phone-frame:hover {
+            transform: scale(1.02);
+        }
+
+        /* iPad Container (Frameless) */
+        .ipad-frame {
+            /* Removed bezel styles */
+            border: none;
+            background: transparent;
+            box-shadow: none;
+            width: 800px;
+            /* FORCE LARGE WIDTH */
+            max-width: 100%;
+            aspect-ratio: auto;
+            position: relative;
+            transition: transform 0.5s ease;
+        }
+
+        .ipad-frame:hover {
+            transform: scale(1.02);
+        }
+
+        /* Notch removed */
+        .phone-frame::after {
+            display: none;
+        }
+
+        .phone-content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .phone-content video {
+            width: 100%;
+            height:
+                auto;
+            /* Allow auto height */
+            /* object-fit: cover; <-- standard video fit */
+            display: block;
+            border-radius:
+                12px;
+            /* Slight radius for aesthetics */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            /* Add shadow to the video
+        itself */
+            /* Positioning logic change: stacked or absolute? */
+            /* We still need absolute to overlap them for
+        easy switching */
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            transform: scale(1.05);
+        }
+
+        .phone-content video.active {
+            opacity: 1;
+            transform: scale(1);
+            position:
+                relative;
+            /* Make the active one take up space? No, transition relies on absolute. */
+            /* Issue: If aspect ratios
+        differ, absolute might be tricky. However, if we assume they are consistent per device type, absolute is fine.
+        BUT, avoiding 0 height container is key. Let's try: relative for active and others absolute? That causes layout
+        shift. Better: Giving .phone-content an aspect ratio matching the video? Or just relying on the container
+        max-width. For now, let's keep absolute but ensure the container has height. Wait, if I removed aspect-ratio
+        from .phone-frame, height is 0. I MUST set an aspect ratio or min-height. */
+        }
+
+        /* Hack to maintain height: Since
+        I don't know the exact video ratio, I will restore a generic aspect ratio for the container so the videos fit
+        in. iPhone usually 9/19.5, if "animations" -> maybe 4/5 or 9/16?
+        Let's default to a vertical-ish rect.
+        */
+        /* Hack to maintain height: maintained at new ratio */
+        .phone-frame {
+            aspect-ratio: 27/32;
+        }
+
+        /* 810 / 960 */
+
+        .ipad-frame {
+            aspect-ratio: 4/3;
+        }
+
+        /* Landscape-ish or square-ish */
+
+        .phone-content video.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        @media (max-width: 1350px) {
+            .showcase-container {
+                display: block;
+                /* Use block to let video define height */
+                padding: 40px 20px 0 20px;
+                /* No bottom padding so video hits edge */
+                gap: 0;
+                border-radius: 30px;
+                overflow: hidden;
+                /* Clip the bottom gradient/video corners */
+            }
+
+            .feature-list {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                z-index: 10;
+
+                flex-direction: row;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+
+                /* Gradient background for legibility */
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 50%, transparent 100%);
+
+                padding: 40px 20px 30px 20px;
+                /* ample padding for touch targets */
+                gap: 15px;
+                align-items: center;
+
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                justify-content: flex-start;
+                mask-image: none;
+                /* Remove mask, use gradient bg instead */
+            }
+
+            .feature-list::-webkit-scrollbar {
+                display: none;
+            }
+
+            .feature-list h2 {
+                display: none;
+            }
+
+            .feature-btn {
+                flex: 0 0 auto;
+                width: auto;
+                min-width: 140px;
+                /* Slightly smaller for dense overlay */
+                justify-content: center;
+                padding: 10px 18px;
+                font-size: 0.9rem;
+                background: rgba(255, 255, 255, 0.15);
+                /* More visible on top of video */
+                backdrop-filter: blur(10px);
+                /* Glassmorphism */
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 30px;
+                white-space: nowrap;
+                scroll-snap-align: center;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            }
+
+            .feature-btn:hover {
+                transform: none;
+                background: rgba(255, 255, 255, 0.15);
+            }
+
+            .feature-btn.active {
+                transform: scale(1.05);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            }
+
+            .phone-frame {
+                width: 100%;
+                /* Take full width on mobile */
+                max-width: 500px;
+                /* Limit slightly on mobile */
+                transform: rotate(0deg);
+            }
+
+            /* Mobile Hotspot Adjustments */
+            .hotspot-card {
+                position: relative !important;
+                top: auto !important;
+                left: auto !important;
+                transform: none !important;
+                margin-top: 20px;
+                width: 100% !important;
+                text-align: center;
+            }
+
+            /* Enable Feature Scroll Controls on Mobile */
+            .feature-scroll-controls {
+                display: flex;
+                position: absolute;
+                bottom: 30px;
+                width: 100%;
+                left: 0;
+                /* Fixes clipping by aligning to edge */
+                justify-content: space-between;
+                padding: 0 10px;
+                pointer-events: none;
+                z-index: 20;
+            }
+
+            .feature-scroll-controls .scroll-nav-btn {
+                pointer-events: auto;
+                /* Re-enable clicks for buttons */
+                background: rgba(0, 0, 0, 0.5);
+                /* Darker contrast for video overlay */
+                border-color: rgba(255, 255, 255, 0.2);
+            }
+        }
+
+        /* UI Explainer / Hotspots CSS */
+        .ui-explainer {
+            padding: 40px 20px;
+            background: #fff;
+            /* Clean background to contrast with dark showcase */
+            margin-bottom: 60px;
+        }
+
+        .explainer-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .explainer-header h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .device-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .toggle-btn {
+            padding: 10px 30px;
+            border-radius: 25px;
+            border: 2px solid var(--primary);
+            background: transparent;
+            color: var(--primary);
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-btn.active,
+        .toggle-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .hotspot-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: none;
+            /* Hidden by default */
+            justify-content: center;
+        }
+
+        .hotspot-container.active {
+            display: flex;
+        }
+
+        .hotspot-image-wrapper {
+            position: relative;
+            display: inline-block;
+            border-radius: 20px;
+            /* overflow: hidden; <-- REMOVED TO PREVENT CLIPPING */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .hotspot-image-wrapper img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            max-height: 70vh;
+            border-radius:
+                20px;
+            /* Applied directly to image */
+        }
+
+        /* Pulsing Dot */
+        .hotspot-dot {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: rgba(211, 84, 0, 0.9);
+            /* var(--primary) */
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 0 0 0 rgba(211, 84, 0, 0.7);
+            animation: pulse-orange 2s infinite;
+            transition:
+                transform 0.3s ease;
+        }
+
+        .hotspot-dot:hover {
+            transform: scale(1.2);
+        }
+
+        .hotspot-dot.active {
+            background: #fff;
+            color: var(--primary);
+            transform: scale(1.2);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            animation: none;
+            border: 2px solid var(--primary);
+        }
+
+        @keyframes pulse-orange {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(211, 84, 0, 0.7);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 15px rgba(211, 84, 0, 0);
+            }
+
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(211, 84, 0, 0);
+            }
+        }
+
+        /* Info Card */
+        .hotspot-card {
+            position: absolute;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,
+                    0, 0, 0.2);
+            width: 250px;
+            z-index: 20;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            transform:
+                translateY(10px);
+            pointer-events: none;
+            text-align: left;
+        }
+
+        .hotspot-card.visible {
+            opacity: 1;
+            visibility:
+                visible;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .hotspot-card h4 {
+            margin: 0 0 8px 0;
+            color:
+                var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .hotspot-card p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        /* Connector Line (Simplified as a little arrow/triangle) */
+        .hotspot-card::after {
+            content: '';
+            position: absolute;
+            /* Adjust based on position, defaulting to left indicator */
+        }
     </style>
 </head>
 
@@ -120,54 +754,218 @@
         <p class="subtitle">Master your Swaras with the ultimate Indian Classical Music Tuner.</p>
 
         <!-- Link to your App Store page (update the ID when you have it) -->
-        <a href="#" class="download-badge">
+        <a href="https://apps.apple.com/us/app/swarmeter/id6756004078" class="download-badge">
             Download on the App Store
         </a>
     </header>
 
-    <div class="container">
-
-        <div class="features">
-            <div class="feature-card">
-                <h3>Real-Time Pitch Graph</h3>
-                <p>Visualize your voice instantly. See the shape of your Gamakas, glides, and vibrato with a smooth,
-                    responsive graph.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Precise Swara Tuner</h3>
-                <p>A dedicated dial shows you exactly where you are relative to the 12 Swaras. Perfect for perfecting
-                    your Sruti alignment.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Immersive Themes</h3>
-                <p>Practice in beautiful environments like "Golden Hampi" and "Midnight Puri" that inspire your Riyaz.
-                </p>
+    <!-- Wrapper for Features (White BG) -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="features" id="features">
+                <div class="feature-card">
+                    <h3>Real-Time Pitch Graph</h3>
+                    <p>Visualize your voice instantly. See the shape of your Gamakas, glides, and vibrato with a smooth,
+                        responsive graph.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Precise Swara Tuner</h3>
+                    <p>A dedicated dial shows you exactly where you are relative to the 12 Swaras. Perfect for
+                        perfecting
+                        your Sruti alignment.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Immersive Themes</h3>
+                    <p>Practice in beautiful environments like "Golden Hampi" and "Midnight Puri" that inspire your
+                        Riyaz.
+                    </p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="screenshots">
-            <h2>See it in Action</h2>
-            <img src="screenshots/iphone/Store slides 6.5.001.png" alt="Swarmeter Tuner View">
-            <img src="screenshots/iphone/Store slides 6.5.002.png" alt="Swarmeter Pitch Graph">
-            <img src="screenshots/iphone/Store slides 6.5.003.png" alt="Swarmeter Settings">
-            <img src="screenshots/iphone/Store slides 6.5.005.png" alt="Swarmeter Themes">
+    <div class="usage-guide" id="experience">
+        <!-- iPhone Section -->
+        <div class="showcase-container">
+            <!-- Mobile Scroll Controls -->
+            <div class="feature-scroll-controls">
+                <button class="scroll-nav-btn" onclick="scrollContainer(this, -1, '.feature-list')">&#10094;</button>
+                <button class="scroll-nav-btn" onclick="scrollContainer(this, 1, '.feature-list')">&#10095;</button>
+            </div>
+
+            <div class="feature-list">
+                <h2>App Experience</h2>
+                <button class="feature-btn active" onclick="showFeature('iphone', 'scale')">
+                    <span class="icon">🎵</span> Set Scale / Base Note
+                </button>
+                <button class="feature-btn" onclick="showFeature('iphone', 'display_modes')">
+                    <span class="icon">📱</span> Display Modes
+                </button>
+                <button class="feature-btn" onclick="showFeature('iphone', 'graph_display')">
+                    <span class="icon">📈</span> Graph Display
+                </button>
+                <button class="feature-btn" onclick="showFeature('iphone', 'graph_settings')">
+                    <span class="icon">🔧</span> Graph Settings
+                </button>
+            </div>
+
+            <div class="showcase-display">
+                <div class="phone-frame">
+                    <div class="phone-content" id="iphone-content">
+                        <!-- Helper: Placevideos for iphone here. ID format: iphone-vid-[feature] -->
+                        <video id="iphone-vid-scale" class="active" autoplay loop muted playsinline
+                            poster="screenshots/iphone/Store slides 6.5.001.png">
+                            <source src="videos/iphone/SwarMeter%20Set%20Scale.mp4" type="video/mp4">
+                        </video>
+                        <video id="iphone-vid-display_modes" autoplay loop muted playsinline
+                            poster="screenshots/iphone/Store slides 6.5.002.png">
+                            <source src="videos/iphone/SwarMeter%20display%20mode.mp4" type="video/mp4">
+                        </video>
+                        <video id="iphone-vid-graph_display" autoplay loop muted playsinline
+                            poster="screenshots/iphone/Store slides 6.5.002.png">
+                            <source src="videos/iphone/SwarMeter%20landscape.mp4" type="video/mp4">
+                        </video>
+                        <video id="iphone-vid-graph_settings" autoplay loop muted playsinline
+                            poster="screenshots/iphone/Store slides 6.5.003.png">
+                            <source src="videos/iphone/SwarMeter%20Graph%20scale%20change.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="support" id="support">
-            <h2>Support & Contact</h2>
-            <p>Need help? Have a feature request? We'd love to hear from you.</p>
-            <p>Email us at: <strong><a href="mailto:digishpandya@gmail.com">digishpandya@gmail.com</a></strong></p>
-            <br>
-            <p><a href="https://digish.github.io/PrivacyPolicy/Privacy_Policy_Swarmeter.md" target="_blank">View Privacy
-                    Policy</a></p>
-        </div>
-
     </div>
+
+
+
+    <!-- Wrapper for Gallery (Default Cream BG for contrast with White features/support) -->
+    <section class="section-padding bg-cream">
+        <div class="container">
+            <div class="screenshots" id="gallery">
+                <h2>App Gallery</h2>
+                <div class="gallery-wrapper">
+                    <button class="gallery-nav-btn"
+                        onclick="scrollContainer(this, -1, '.screenshot-scroll')">&#10094;</button>
+                    <div class="screenshot-scroll">
+                        <img src="screenshots/iphone/Store slides 6.5.001.png" alt="Swarmeter Tuner View">
+                        <img src="screenshots/iphone/Store slides 6.5.002.png" alt="Swarmeter Settings">
+                        <img src="screenshots/iphone/Store slides 6.5.003.png" alt="Swarmeter Graph">
+                        <img src="screenshots/iphone/Store slides 6.5.005.png" alt="Swarmeter Themes">
+                    </div>
+                    <button class="gallery-nav-btn"
+                        onclick="scrollContainer(this, 1, '.screenshot-scroll')">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Wrapper for Support (White BG) -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="support" id="support">
+                <h2>Support & Contact</h2>
+                <p>Need help? Have a feature request? We'd love to hear from you.</p>
+                <p>Email us at: <strong><a href="mailto:digish.pandya@gmail.com">digish.pandya@gmail.com</a></strong>
+                </p>
+                <br>
+                <p><a href="https://digish.github.io/PrivacyPolicy/Privacy_Policy_Swarmeter.md" target="_blank">View
+                        Privacy
+                        Policy</a></p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         &copy; 2025 Digish Pandya. All rights reserved.
     </footer>
 
+    <script>
+        function scrollContainer(btn, direction, selector) {
+            // Find the container relative to the button
+            // For feature list: sibling or parent's sibling
+            // For gallery: sibling
+            const wrapper = btn.closest('.showcase-container') || btn.closest('.gallery-wrapper');
+            const container = wrapper.querySelector(selector);
+
+            if (container) {
+                const scrollAmount = 300; // Scroll by 300px
+                container.scrollBy({
+                    left: direction * scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        function showFeature(device, featureName) {
+            // Determine which container we are in based on the clicked button
+            const btn = event.currentTarget;
+            const container = btn.closest('.showcase-container');
+
+            // Update buttons ONLY in this container
+            const buttons = container.querySelectorAll('.feature-btn');
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Update videos ONLY in this container
+            // We find the .phone-content inside this container
+            const phoneContent = container.querySelector('.phone-content');
+            const videos = phoneContent.querySelectorAll('video');
+            videos.forEach(vid => {
+                vid.classList.remove('active');
+            });
+
+            // Construct ID based on device and feature
+            // Expected IDs: iphone-vid-[feature] or ipad-vid-[feature]
+            const targetId = device + '-vid-' + featureName;
+            const activeVid = document.getElementById(targetId);
+
+            if (activeVid) {
+                activeVid.classList.add('active');
+                activeVid.currentTime = 0;
+                activeVid.play();
+            }
+        }
+
+        // --- Hotspot Explainer Logic ---
+        function switchExplainer(device) {
+            // Toggle Buttons
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            // Simple text check or passing 'this' is robust, but here we assume order or text
+            // Let's just find the one that matches text content for simplicity or add IDs
+            const clickedBtn = Array.from(buttons).find(b => b.textContent.toLowerCase() === device);
+            if (clickedBtn) clickedBtn.classList.add('active');
+
+            // Toggle Containers
+            document.getElementById('explainer-iphone').classList.remove('active');
+            document.getElementById('explainer-ipad').classList.remove('active');
+
+            document.getElementById('explainer-' + device).classList.add('active');
+        }
+
+        function toggleHotspot(dotElement, cardId) {
+            // Close other open cards in the same container
+            const container = dotElement.closest('.hotspot-image-wrapper');
+            const allCards = container.querySelectorAll('.hotspot-card');
+            const allDots = container.querySelectorAll('.hotspot-dot');
+
+            // If this dot is already active, close it
+            if (dotElement.classList.contains('active')) {
+                dotElement.classList.remove('active');
+                document.getElementById(cardId).classList.remove('visible');
+                return;
+            }
+
+            // Reset all
+            allCards.forEach(c => c.classList.remove('visible'));
+            allDots.forEach(d => d.classList.remove('active'));
+
+            // Activate clicked
+            dotElement.classList.add('active');
+            const card = document.getElementById(cardId);
+            card.classList.add('visible');
+        }
+    </script>
 </body>
 
 </html>
