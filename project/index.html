@@ -4,303 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Komal Pandya Apps - Innovative Mobile Experiences</title>
+    <title>Komal Pandya Apps - Swar Meter & Bhagvad Gita</title>
     <meta name="description"
-        content="Discover innovative and beautiful mobile apps by Komal Pandya. Featuring Swar Meter, Shrimad Bhagvad Gita, and more.">
+        content="Discover Swar Meter and Shrimad Bhagvad Gita apps by Komal Pandya. Available on Android and iOS.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background"></div>
-        <div class="container">
-            <header class="header">
-                <div class="logo">
-                    <h1>Komal & Digish Pandya Apps</h1>
+    <!-- Main container acts as the 'apps' section -->
+    <div class="scroll-container" id="apps">
+        <!-- Swar Meter Card -->
+        <section class="app-card" id="swarmeter">
+            <div class="app-image-container">
+                <img src="images/swarmeter.png" alt="Swar Meter App" class="app-image">
+            </div>
+            <div class="app-details">
+                <h1 class="app-title">Swar Meter</h1>
+                <p class="app-subtitle">Advanced pitch detection for musicians</p>
+                <div class="store-links">
+                    <a href="https://play.google.com/store/apps/details?id=org.komal.SwarMeter" target="_blank"
+                        class="store-button">
+                        <img src="playstore.png" alt="Get it on Google Play">
+                    </a>
+                    <a href="https://apps.apple.com/us/app/swarmeter/id6756004078" target="_blank" class="store-button">
+                        <img src="appstore.png" alt="Download on the App Store">
+                    </a>
                 </div>
-                <nav class="nav">
-                    <a href="#apps" class="nav-link">Apps</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </nav>
-            </header>
+                <a href="https://digish.github.io/PrivacyPolicy/Privacy_Policy_Swarmeter.md" target="_blank"
+                    class="privacy-link">Privacy Policy</a>
+            </div>
+        </section>
 
-            <div class="hero-content">
-                <h2 class="hero-title">
-                    <span class="gradient-text">Ignite Your Passion</span>
-                    <br>Explore the Extraordinary
-                </h2>
-                <p class="hero-description">
-                    Embark on a journey of discovery with apps designed to elevate your daily
-                    life.
-                </p>
-                <div class="hero-cta">
-                    <a href="#apps" class="btn btn-primary">Discover Apps</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        <!-- Bhagvad Gita Card -->
+        <section class="app-card" id="bhagvadgita">
+            <div class="app-image-container">
+                <img src="images/gita.png" alt="Shrimad Bhagvad Gita App" class="app-image">
+            </div>
+            <div class="app-details">
+                <h1 class="app-title">Shrimad Bhagvad Gita</h1>
+                <p class="app-subtitle">Search, Listen, Read - Your spiritual companion</p>
+                <div class="store-links">
+                    <a href="https://play.google.com/store/apps/details?id=org.komal.bhagvadgeeta" target="_blank"
+                        class="store-button">
+                        <img src="playstore.png" alt="Get it on Google Play">
+                    </a>
+                    <a href="https://apps.apple.com/app/id6756779432" target="_blank" class="store-button">
+                        <img src="appstore.png" alt="Download on the App Store">
+                    </a>
+                </div>
+                <a href="https://digish.github.io/project/bhagavad_gita/privacy-policy.html" target="_blank"
+                    class="privacy-link">Privacy Policy</a>
+            </div>
+        </section>
+
+        <!-- Contact / Footer simplified card -->
+        <section class="app-card contact-card" id="contact">
+            <div class="contact-content">
+                <h2>Get in Touch</h2>
+                <p>Creating beautiful, functional apps.</p>
+                <div class="contact-links">
+                    <a href="mailto:digish.pandya@gmail.com" class="contact-link">digish.pandya@gmail.com</a>
                 </div>
             </div>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Apps Overview Section -->
-    <section id="apps" class="apps-overview-section">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Our Apps</h2>
-                <p class="section-description">Explore our collection of high-quality mobile applications.</p>
-            </div>
-
-            <div class="apps-grid">
-                <!-- Swar Meter Card -->
-                <a href="#swarmeter" class="app-card">
-                    <div class="app-card-icon">🎵</div>
-                    <div class="app-card-content">
-                        <h3>Swar Meter</h3>
-                        <p>Advanced pitch detection and visualization for musicians.</p>
-                        <span class="app-card-link">Learn More &rarr;</span>
-                    </div>
-                </a>
-
-                <!-- Bhagvad Gita Card -->
-                <a href="#bhagvadgita" class="app-card">
-                    <div class="app-card-icon">📖</div>
-                    <div class="app-card-content">
-                        <h3>Shrimad Bhagvad Gita</h3>
-                        <p>Search, listen, and read the timeless wisdom of the Gita.</p>
-                        <span class="app-card-link">Learn More &rarr;</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Swar Meter Section -->
-    <section id="swarmeter" class="app-section swarmeter-section">
-        <div class="container">
-            <div class="app-content">
-                <div class="app-info" data-aos="fade-right">
-                    <div class="app-badge">Music Tool</div>
-                    <h2 class="app-title">Swar Meter</h2>
-                    <p class="app-tagline">Advanced yet simple app for musical notes visualization</p>
-                    <p class="app-description">
-                        A super simple tuner designed for music enthusiasts. Swar Meter provides real-time pitch
-                        detection and visualization, helping musicians of all levels achieve perfect tuning.
-                        Experience the perfect blend of precision and simplicity.
-                    </p>
-
-                    <div class="features">
-                        <div class="feature">
-                            <div class="feature-icon">🎵</div>
-                            <div>
-                                <h4>Real-time Tuning</h4>
-                                <p>Instant pitch detection and visualization</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">📊</div>
-                            <div>
-                                <h4>Beautiful Graphs</h4>
-                                <p>Track your pitch over time with smooth curves</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">🎨</div>
-                            <div>
-                                <h4>Immersive Design</h4>
-                                <p>Stunning visuals inspired by Indian culture</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="download-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=org.komal.SwarMeter" target="_blank"
-                            class="store-btn" aria-label="Download Swar Meter on Google Play">
-                            <img src="playstore.png" alt="Get it on Google Play" class="store-badge-img">
-                        </a>
-                        <a href="https://apps.apple.com/us/app/swarmeter/id6756004078" target="_blank" class="store-btn"
-                            aria-label="Download Swar Meter on App Store">
-                            <img src="appstore.png" alt="Download on the App Store" class="store-badge-img">
-                        </a>
-                    </div>
-                    <div class="app-status">
-                        <span class="status-badge">✓ Available on Android</span>
-                        <span class="status-badge status-pending">✓ Available on iOS</span>
-                    </div>
-                </div>
-
-                <div class="app-preview" data-aos="fade-left">
-                    <div class="phone-mockup">
-                        <div class="screen-container iphone-exact">
-                            <img src="swarmeter/screenshots/iphone/Store slides 6.5.001.png"
-                                alt="Swar Meter Screenshot 1" class="screenshot active">
-                            <img src="swarmeter/screenshots/iphone/Store slides 6.5.002.png"
-                                alt="Swar Meter Screenshot 2" class="screenshot">
-                            <img src="swarmeter/screenshots/iphone/Store slides 6.5.003.png"
-                                alt="Swar Meter Screenshot 3" class="screenshot">
-                        </div>
-                    </div>
-                    <div class="screenshot-dots">
-                        <span class="dot active" data-index="0"></span>
-                        <span class="dot" data-index="1"></span>
-                        <span class="dot" data-index="2"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bhagvad Gita Section -->
-    <section id="bhagvadgita" class="app-section gita-section">
-        <div class="container">
-            <div class="app-content reverse">
-                <div class="app-preview" data-aos="fade-right">
-                    <div class="phone-mockup android-mockup">
-                        <div class="screen-container android-exact">
-                            <img src="bhagvadgeeta/screenshots/01.png" alt="Bhagvad Gita Screenshot 1"
-                                class="screenshot active">
-                            <img src="bhagvadgeeta/screenshots/o2.png" alt="Bhagvad Gita Screenshot 2"
-                                class="screenshot">
-                            <img src="bhagvadgeeta/screenshots/03.png" alt="Bhagvad Gita Screenshot 3"
-                                class="screenshot">
-                            <img src="bhagvadgeeta/screenshots/04.png" alt="Bhagvad Gita Screenshot 4"
-                                class="screenshot">
-                        </div>
-                    </div>
-                    <div class="screenshot-dots">
-                        <span class="dot active" data-index="0"></span>
-                        <span class="dot" data-index="1"></span>
-                        <span class="dot" data-index="2"></span>
-                        <span class="dot" data-index="3"></span>
-                    </div>
-                </div>
-
-                <div class="app-info" data-aos="fade-left">
-                    <div class="app-badge spirituality">Spiritual Guidance</div>
-                    <h2 class="app-title">Shrimad Bhagvad Gita</h2>
-                    <p class="app-tagline">Search, Listen, Read - Your spiritual companion</p>
-                    <p class="app-description">
-                        Dive deep into the timeless wisdom of the Bhagavad Gita. This beautifully crafted app
-                        brings ancient spiritual knowledge to your fingertips with powerful search, audio narration,
-                        and an intuitive reading experience. Perfect for daily study and spiritual growth.
-                    </p>
-
-                    <div class="features">
-                        <div class="feature">
-                            <div class="feature-icon">🔍</div>
-                            <div>
-                                <h4>Advanced Search</h4>
-                                <p>Find verses instantly with powerful search</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">🎧</div>
-                            <div>
-                                <h4>Audio Narration</h4>
-                                <p>Listen to sacred verses on the go</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">📱</div>
-                            <div>
-                                <h4>Clean Interface</h4>
-                                <p>Distraction-free reading experience</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="download-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=org.komal.bhagvadgeeta" target="_blank"
-                            class="store-btn" aria-label="Download Bhagvad Gita on Google Play">
-                            <img src="playstore.png" alt="Get it on Google Play" class="store-badge-img">
-                        </a>
-                        <a href="https://apps.apple.com/app/id6756779432" target="_blank" class="store-btn"
-                            aria-label="Download Bhagavad Gita - Search within on App Store">
-                            <img src="appstore.png" alt="Download on the App Store" class="store-badge-img">
-                        </a>                        
-                    </div>
-                    <div class="app-status">
-                        <span class="status-badge">✓ Available on Android</span>
-                        <span class="status-badge status-pending">✓ Available on iOS</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="contact-content" data-aos="fade-up">
-                <h2 class="section-title">Get in Touch</h2>
-                <p class="section-description">
-                    Have questions or feedback? I'd love to hear from you!
-                </p>
-
-                <div class="contact-cards">
-                    <div class="contact-card">
-                        <div class="contact-icon">✉️</div>
-                        <h3>Email</h3>
-                        <a href="mailto:digish.pandya@gmail.com">digish.pandya@gmail.com</a>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon">🏪</div>
-                        <h3>Developer Page</h3>
-                        <a href="https://play.google.com/store/apps/developer?id=Komal+Pandya" target="_blank">
-                            View on Play Store
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Komal & Digish Pandya Apps</h3>
-                    <p>Creating beautiful, functional apps.</p>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Apps</h4>
-                    <ul>
-                        <li><a href="#swarmeter">Swar Meter</a></li>
-                        <li><a href="#bhagvadgita">Bhagvad Gita</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="http://digish.github.io/project/swarmeter/privacy_policy.html"
-                                target="_blank">Privacy Policy</a></li>
-                        <li><a href="mailto:digish.pandya@gmail.com">Support</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Komal & Digish Pandya. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+        </section>
+    </div>
 </body>
 
 </html>
