@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+
+    <!-- 1. GOOGLE ANALYTICS (GA4) -->
+    <!-- REPLACE G-XXXXXXXXXX with your actual Measurement ID -->
+    <script async src="https://www.googletagmanager.com"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f9f9f9; text-align: center; }
+        .loader { border: 4px solid #f3f3f3; border-top: 4px solid #3498db; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: auto; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="loader"></div>
+        <h2 id="status">Checking your device...</h2>
+        <p>Not moving? <a id="manual-link" href="#">Click here to continue</a>.</p>
+    </div>
+
+    <script>
+        (function() {
+            // --- 2. CONFIGURATION: REPLACE THESE WITH YOUR ACTUAL LINKS ---
+            const IOS_URL = "https://apps.apple.com/us/app/id6756779432";
+            const ANDROID_URL = "https://play.google.com/store/apps/details?id=org.komal.bhagvadgeeta";
+            const FALLBACK_URL = "https://digish.github.io/project/index.html#bhagvadgita"; 
+            // -------------------------------------------------------------
+
+            const ua = navigator.userAgent || navigator.vendor || window.opera;
+            let targetUrl = FALLBACK_URL;
+            let platform = "Desktop";
+
+            if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+                targetUrl = IOS_URL;
+                platform = "iOS";
+            } else if (/android/i.test(ua)) {
+                targetUrl = ANDROID_URL;
+                platform = "Android";
+            }
+
+            document.getElementById('manual-link').href = targetUrl;
+            document.getElementById('status').innerText = "Redirecting to " + platform + "...";
+
+            // 3. LOGGING THE REDIRECT EVENT
+            if (typeof gtag === 'function') {
+                gtag('event', 'store_redirect', {
+                    'event_category': 'Engagement',
+                    'event_label': platform,
+                    'target_url': targetUrl,
+                    'event_callback': function() { window.location.replace(targetUrl); }
+                });
+            }
+
+            // Safety fallback: Redirect anyway after 1.5 seconds if GA fails
+            setTimeout(function() { window.location.replace(targetUrl); }, 1500);
+        })();
+    </script>
+</body>
+</html>
