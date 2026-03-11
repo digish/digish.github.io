@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary Meta Tags -->
+<title>Shrimad Bhagavad Gita - App Download</title>
+<meta name="title" content="Shrimad Bhagavad Gita - Download Now">
+<meta name="description" content="Experience the divine wisdom of Shrimad Bhagavad Gita. Download the app on iOS and Android.">
+
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://digish.github.io/project/index.html#bhagvadgita">
+<meta property="og:title" content="Shrimad Bhagavad Gita">
+<meta property="og:description" content="Experience the divine wisdom of Shrimad Bhagavad Gita. Click to download for your device.">
+<meta property="og:image" content="https://digish.github.io/project/gita.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://digish.github.io/project/index.html#bhagvadgita">
+<meta property="twitter:title" content="Shrimad Bhagavad Gita">
+<meta property="twitter:description" content="Download the Shrimad Bhagavad Gita app on iOS and Android.">
+<meta property="twitter:image" content="https://digish.github.io/project/gita.png">
 
     <!-- 1. GOOGLE ANALYTICS (GA4) -->
-    <!-- REPLACE G-XXXXXXXXXX with your actual Measurement ID -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-05XHR9PJ95"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -14,56 +32,113 @@
       gtag('js', new Date());
       gtag('config', 'G-05XHR9PJ95');
     </script>
-
+<!--
     <style>
         body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f9f9f9; text-align: center; }
         .loader { border: 4px solid #f3f3f3; border-top: 4px solid #3498db; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: auto; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style> -->
+
+        <style>
+        /* Branded Spiritual Theme */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background: linear-gradient(135deg, #FF9933 0%, #FFCC33 100%); /* Saffron Gradient */
+            text-align: center; 
+            color: #fff; 
+        }
+        .container { 
+            background: rgba(255, 255, 255, 0.1); 
+            padding: 40px; 
+            border-radius: 20px; 
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            max-width: 300px;
+            width: 90%;
+        }
+        .app-logo { 
+            width: 100px; 
+            height: 100px; 
+            border-radius: 22%; /* App Icon curvature */
+            margin-bottom: 20px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .loader { 
+            border: 3px solid rgba(255,255,255,0.3); 
+            border-top: 3px solid #fff; 
+            border-radius: 50%; 
+            width: 30px; 
+            height: 30px; 
+            animation: spin 1s linear infinite; 
+            margin: 0 auto 15px auto; 
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        a { color: #fff; text-decoration: underline; font-weight: bold; }
+        h2 { font-size: 1.4rem; margin: 10px 0; text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
     </style>
+    
 </head>
 <body>
+
+
+    <div class="container">
+        <!-- APP LOGO ADDED HERE -->
+        <img src="https://digish.github.io/project/gita.png" alt="Shrimad Bhagavad Gita Logo" class="app-logo">
+        
+        <div class="loader"></div>
+        <h2 id="status">Opening App Store...</h2>
+        <p style="font-size: 0.9rem; opacity: 0.9;">
+            Not moving? <a id="manual-link" href="https://digish.github.io/project/index.html#bhagvadgita">Click here</a>.
+        </p>
+    </div>
+    <!--
     <div>
         <div class="loader"></div>
         <h2 id="status">Checking your device...</h2>
         <p>Not moving? <a id="manual-link" href="#">Click here to continue</a>.</p>
     </div>
+     -->
+<script>
+    (function() {
+        const IOS_URL = "https://apps.apple.com/us/app/id6756779432";
+        const ANDROID_URL = "https://play.google.com/store/apps/details?id=org.komal.bhagvadgeeta";
+        const FALLBACK_URL = "https://digish.github.io/project/index.html#bhagvadgita"; 
 
-    <script>
-        (function() {
-            // --- 2. CONFIGURATION: REPLACE THESE WITH YOUR ACTUAL LINKS ---
-            const IOS_URL = "https://apps.apple.com/us/app/id6756779432";
-            const ANDROID_URL = "https://play.google.com/store/apps/details?id=org.komal.bhagvadgeeta";
-            const FALLBACK_URL = "https://digish.github.io/project/index.html#bhagvadgita"; 
-            // -------------------------------------------------------------
+        const ua = navigator.userAgent || navigator.vendor || window.opera;
+        let targetUrl = FALLBACK_URL;
+        let platform = "Desktop";
 
-            const ua = navigator.userAgent || navigator.vendor || window.opera;
-            let targetUrl = FALLBACK_URL;
-            let platform = "Desktop";
+        if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+            targetUrl = IOS_URL;
+            platform = "iOS";
+        } else if (/android/i.test(ua)) {
+            targetUrl = ANDROID_URL;
+            platform = "Android";
+        }
 
-            if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-                targetUrl = IOS_URL;
-                platform = "iOS";
-            } else if (/android/i.test(ua)) {
-                targetUrl = ANDROID_URL;
-                platform = "Android";
-            }
+        document.getElementById('manual-link').href = targetUrl;
+        document.getElementById('status').innerText = "Opening " + platform + " Store...";
 
-            document.getElementById('manual-link').href = targetUrl;
-            document.getElementById('status').innerText = "Redirecting to " + platform + "...";
+        // Logging with Beacon to ensure data is sent before redirect
+        if (typeof gtag === 'function') {
+            gtag('event', 'store_redirect', {
+                'app_name': 'Shrimad Bhagavad Gita',
+                'platform': platform,
+                'target_url': targetUrl,
+                'transport_type': 'beacon' // Essential for fast redirects
+            });
+        }
 
-            // 3. LOGGING THE REDIRECT EVENT
-            if (typeof gtag === 'function') {
-                gtag('event', 'store_redirect', {
-                    'event_category': 'Engagement',
-                    'event_label': platform,
-                    'target_url': targetUrl,
-                    'event_callback': function() { window.location.replace(targetUrl); }
-                });
-            }
-
-            // Safety fallback: Redirect anyway after 1.5 seconds if GA fails
-            setTimeout(function() { window.location.replace(targetUrl); }, 1500);
-        })();
-    </script>
+        // Slight delay to allow the visual "Redirecting" message to be seen
+        setTimeout(function() { 
+            window.location.replace(targetUrl); 
+        }, 800); 
+    })();
+</script>
 </body>
 </html>
