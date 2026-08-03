@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary Meta Tags -->
+<title>Sacred Sutra - App Download</title>
+<meta name="title" content="Sacred Sutra - Download Now">
+<meta name="description" content="Sacred Sutra — offline BORI Mahabharata with Sacred Teachings, quizzes, and character intelligence. Download on iOS and Android.">
+
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://digish.github.io/project/sacredsutra.html">
+<meta property="og:title" content="Sacred Sutra">
+<meta property="og:description" content="Explore the Mahabharata offline. Click to download for your device.">
+<meta property="og:image" content="https://digish.github.io/project/sacredsutra.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://digish.github.io/project/sacredsutra.html">
+<meta property="twitter:title" content="Sacred Sutra">
+<meta property="twitter:description" content="Download the Sacred Sutra app on iOS and Android.">
+<meta property="twitter:image" content="https://digish.github.io/project/sacredsutra.png">
+
+    <!-- 1. GOOGLE ANALYTICS (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-05XHR9PJ95"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-05XHR9PJ95');
+    </script>
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1310448097585783');
+  fbq('track', 'PageView');
+  fbq('trackCustom', 'AppStoreRedirect');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=1310448097585783&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Meta Pixel Code -->
+
+        <style>
+        /* Branded theme for Sacred Sutra */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #8B4513 0%, #C45C26 50%, #D4A017 100%);
+            text-align: center;
+            color: #fff;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            max-width: 300px;
+            width: 90%;
+        }
+        .app-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 22%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .loader {
+            border: 3px solid rgba(255,255,255,0.3);
+            border-top: 3px solid #fff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px auto;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        a { color: #fff; text-decoration: underline; font-weight: bold; }
+        h2 { font-size: 1.4rem; margin: 10px 0; text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    </style>
+
+</head>
+<body>
+
+
+    <div class="container">
+        <img src="https://digish.github.io/project/sacredsutra.png" alt="Sacred Sutra Logo" class="app-logo">
+
+        <div class="loader"></div>
+        <h2 id="status">Opening App Store...</h2>
+        <p style="font-size: 0.9rem; opacity: 0.9;">
+            Not moving? <a id="manual-link" href="https://digish.github.io/project/sacredsutra/privacy-policy.html">Click here</a>.
+        </p>
+    </div>
+
+<script>
+    (function() {
+        // TODO: Replace these placeholders after App Store / Play Store publish
+        const IOS_URL = "REPLACE_WITH_APP_STORE_URL";
+        // Expected package id once live: org.komal.sacredsutra
+        const ANDROID_URL = "REPLACE_WITH_PLAY_STORE_URL";
+        const FALLBACK_URL = "https://digish.github.io/project/sacredsutra/privacy-policy.html";
+
+        const ua = navigator.userAgent || navigator.vendor || window.opera;
+        let targetUrl = FALLBACK_URL;
+        let platform = "Desktop";
+
+        if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+            targetUrl = IOS_URL;
+            platform = "iOS";
+        } else if (/android/i.test(ua)) {
+            targetUrl = ANDROID_URL;
+            platform = "Android";
+        }
+
+        // Until store URLs are set, keep users on the fallback page
+        if (targetUrl.indexOf("REPLACE_WITH_") === 0) {
+            targetUrl = FALLBACK_URL;
+        }
+
+        document.getElementById('manual-link').href = targetUrl;
+        document.getElementById('status').innerText = "Opening " + platform + " Store...";
+
+        if (typeof gtag === 'function') {
+            gtag('event', 'store_redirect', {
+                'app_name': 'Sacred Sutra',
+                'platform': platform,
+                'target_url': targetUrl,
+                'transport_type': 'beacon'
+            });
+        }
+
+        setTimeout(function() {
+            window.location.replace(targetUrl);
+        }, 1500);
+    })();
+</script>
+</body>
+</html>
