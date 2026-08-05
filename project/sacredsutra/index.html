@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Sutra — Offline Epics, Sacred Teachings &amp; Search</title>
+    <meta name="description"
+        content="Sacred Sutra is the structured, offline Mahabharata and Ramayana for deep study—Sacred Teachings, character intelligence, sacred geography, quizzes, and on-device search.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #C9A227;
+            --primary-dark: #A8841C;
+            --accent: #C45C26;
+            --dark: #0A0A0A;
+            --surface: #141414;
+            --card-bg: rgba(255, 255, 255, 0.04);
+            --text: #F5F0E8;
+            --muted: #A8A29A;
+            --border: rgba(201, 162, 39, 0.22);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text);
+            background:
+                radial-gradient(ellipse 80% 50% at 50% -10%, rgba(196, 92, 38, 0.18), transparent 55%),
+                radial-gradient(ellipse 60% 40% at 90% 20%, rgba(201, 162, 39, 0.08), transparent 50%),
+                var(--dark);
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(160deg, #1A1208 0%, #0A0A0A 70%);
+            color: white;
+            padding: 5.5rem 2rem 4.5rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 0%, rgba(201, 162, 39, 0.15), transparent 55%);
+            pointer-events: none;
+        }
+
+        header h1 {
+            position: relative;
+            margin: 0;
+            font-family: 'Cinzel', serif;
+            font-size: 3.2rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: var(--primary);
+        }
+
+        header p {
+            position: relative;
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 640px;
+            margin: 1rem auto 0;
+            font-weight: 400;
+            color: var(--muted);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .hero-text {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .hero-text h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: var(--text);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: var(--muted);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .screenshots {
+            display: flex;
+            gap: 1.25rem;
+            overflow-x: auto;
+            padding: 0.5rem 0.25rem 1.5rem;
+            margin-bottom: 4rem;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .screenshots::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .screenshots::-webkit-scrollbar-thumb {
+            background: rgba(201, 162, 39, 0.35);
+            border-radius: 3px;
+        }
+
+        .phone {
+            flex: 0 0 auto;
+            width: 180px;
+            scroll-snap-align: center;
+            border-radius: 28px;
+            padding: 8px;
+            background: linear-gradient(160deg, #2A2418, #121212);
+            border: 1px solid var(--border);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+        }
+
+        .phone img {
+            display: block;
+            width: 100%;
+            border-radius: 22px;
+            height: auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(201, 162, 39, 0.45);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+        }
+
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1.25rem;
+            display: inline-block;
+        }
+
+        .feature-card h3 {
+            margin: 0 0 1rem;
+            font-size: 1.35rem;
+            font-family: 'Cinzel', serif;
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        .feature-card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        .privacy-link {
+            text-align: center;
+            margin-top: 5rem;
+            padding: 2rem;
+            background: var(--surface);
+            border-radius: 15px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .privacy-link p {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        .privacy-link a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .privacy-link a:hover {
+            text-decoration: underline;
+            color: #E0B93A;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: #6B6560;
+            font-size: 0.95rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+                letter-spacing: 0.04em;
+            }
+
+            header p {
+                font-size: 1.05rem;
+            }
+
+            .container {
+                padding: 2.5rem 1.25rem;
+            }
+
+            .hero-text h2 {
+                font-size: 1.55rem;
+            }
+
+            .phone {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sacred Sutra</h1>
+        <p>Offline Epics • Sacred Teachings • Deep Search</p>
+    </header>
+
+    <div class="container">
+        <div class="hero-text">
+            <h2>The Full Epic, Structured for Seekers</h2>
+            <p>Sacred Sutra is the offline Mahabharata and Ramayana for readers who want the complete text—not a
+                summary—with Sacred Teachings, character intelligence, sacred geography, quizzes, and search that makes
+                tens of thousands of verses navigable.</p>
+        </div>
+
+        <div class="screenshots" aria-label="App screenshots">
+            <div class="phone"><img src="screenshots/01-hub.png" alt="Sacred Sutra library with Mahabharata collection" width="414" height="900" loading="eager"></div>
+            <div class="phone"><img src="screenshots/02-teachings.png" alt="Ramayana on device in the Sacred Sutra library" width="414" height="900" loading="lazy"></div>
+            <div class="phone"><img src="screenshots/03-verse.png" alt="Mahabharata narrative hub with canonical and immersive readings" width="414" height="900" loading="lazy"></div>
+            <div class="phone"><img src="screenshots/04-search.png" alt="Smart reader with Sanskrit, transliteration, and translation" width="414" height="900" loading="lazy"></div>
+            <div class="phone"><img src="screenshots/09-feature-e.png" alt="Beyond the Verse explorer with epic tools" width="414" height="900" loading="lazy"></div>
+            <div class="phone"><img src="screenshots/06-feature-b.png" alt="Sacred Places map for Mahabharata geography" width="414" height="900" loading="lazy"></div>
+            <div class="phone"><img src="screenshots/08-feature-d.png" alt="Sacred Geography pilgrimage route on the map" width="414" height="900" loading="lazy"></div>
+            <div class="phone"><img src="screenshots/05-feature-a.png" alt="Immersive story reading with takeaways" width="414" height="900" loading="lazy"></div>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📜</div>
+                <h3>Sacred Teachings</h3>
+                <p>Curated entry to major discourses—Gita, Vidura Niti, Yaksha Prashna, Bhishma’s counsel, and more.
+                    Read in context and deepen understanding with optional quizzes.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📖</div>
+                <h3>Smart Reader</h3>
+                <p>Devanagari, transliteration, and translations in a premium reader—with verse context, speakers,
+                    places, and tools that keep you oriented through the epic.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🗺️</div>
+                <h3>Sacred Geography</h3>
+                <p>Explore ancient sites and narrative journeys on interactive maps—from pilgrimages to exiles—and
+                    connect places back to the verses where they appear.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧭</div>
+                <h3>Epic Explorer</h3>
+                <p>Move beyond linear reading: stories, characters, paths, wars, and relation maps that make the
+                    Mahabharata’s scale feel navigable.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>On-Device Search</h3>
+                <p>Find meaning across tens of thousands of verses with fast, on-device search—no account required and
+                    no cloud dependency for core study.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Privacy First</h3>
+                <p>Designed to work primarily offline. Reading progress and preferences stay on your device. No
+                    accounts. No logins. Your study remains yours.</p>
+            </div>
+        </div>
+
+        <div class="privacy-link">
+            <p>For detailed information on how we protect your data, please read our
+                <a href="privacy-policy.html">Full Privacy Policy</a>.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Digish Pandya. Dedicated to the seekers of Truth.
+    </footer>
+
+</body>
+
+</html>
