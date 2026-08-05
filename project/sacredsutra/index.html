@@ -7,6 +7,9 @@
     <title>Sacred Sutra — Offline Epics, Sacred Teachings &amp; Search</title>
     <meta name="description"
         content="Sacred Sutra is the structured, offline Mahabharata and Ramayana for deep study—Sacred Teachings, character intelligence, sacred geography, quizzes, and on-device search.">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -185,7 +188,7 @@
             font-size: 1rem;
         }
 
-        .privacy-link {
+        .site-links {
             text-align: center;
             margin-top: 5rem;
             padding: 2rem;
@@ -195,18 +198,22 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .privacy-link p {
-            margin: 0;
+        .site-links p {
+            margin: 0 0 0.75rem;
             color: var(--muted);
         }
 
-        .privacy-link a {
+        .site-links p:last-child {
+            margin-bottom: 0;
+        }
+
+        .site-links a {
             color: var(--primary);
             text-decoration: none;
             font-weight: 600;
         }
 
-        .privacy-link a:hover {
+        .site-links a:hover {
             text-decoration: underline;
             color: #E0B93A;
         }
@@ -309,7 +316,10 @@
             </div>
         </div>
 
-        <div class="privacy-link">
+        <div class="site-links" id="support">
+            <p>Need help? Contact support at
+                <a href="mailto:digish.pandya@gmail.com">digish.pandya@gmail.com</a>.
+            </p>
             <p>For detailed information on how we protect your data, please read our
                 <a href="privacy-policy.html">Full Privacy Policy</a>.
             </p>
