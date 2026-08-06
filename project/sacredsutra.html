@@ -103,19 +103,25 @@
     <div class="container">
         <img src="https://digish.github.io/project/sacredsutra.png" alt="Sacred Sutra Logo" class="app-logo">
 
-        <div class="loader"></div>
+        <div class="loader" id="loader"></div>
         <h2 id="status">Opening App Store...</h2>
-        <p style="font-size: 0.9rem; opacity: 0.9;">
+        <p id="hint" style="font-size: 0.9rem; opacity: 0.9;">
             Not moving? <a id="manual-link" href="https://play.google.com/store/apps/details?id=org.komal.sacredsutra&pcampaignid=web_share">Click here</a>.
         </p>
     </div>
 
 <script>
     (function() {
-        // TODO: Replace iOS placeholder after App Store publish
-        const IOS_URL = "REPLACE_WITH_APP_STORE_URL";
+        // App Store Apple ID 6798266974, SKU sacredsutra
+        const IOS_APP_ID = "6798266974";
+        const IOS_URL = "https://apps.apple.com/app/id" + IOS_APP_ID;
         const ANDROID_URL = "https://play.google.com/store/apps/details?id=org.komal.sacredsutra&pcampaignid=web_share";
         const FALLBACK_URL = ANDROID_URL;
+
+        const statusEl = document.getElementById('status');
+        const hintEl = document.getElementById('hint');
+        const loaderEl = document.getElementById('loader');
+        const manualLink = document.getElementById('manual-link');
 
         const ua = navigator.userAgent || navigator.vendor || window.opera;
         let targetUrl = FALLBACK_URL;
@@ -129,26 +135,58 @@
             platform = "Android";
         }
 
-        // Until store URLs are set, keep users on the fallback page
-        if (targetUrl.indexOf("REPLACE_WITH_") === 0) {
-            targetUrl = FALLBACK_URL;
+        function trackRedirect(url) {
+            if (typeof gtag === 'function') {
+                gtag('event', 'store_redirect', {
+                    'app_name': 'Sacred Sutra',
+                    'platform': platform,
+                    'target_url': url,
+                    'transport_type': 'beacon'
+                });
+            }
         }
 
-        document.getElementById('manual-link').href = targetUrl;
-        document.getElementById('status').innerText = "Opening " + platform + " Store...";
+        function showComingSoon() {
+            loaderEl.style.display = 'none';
+            statusEl.innerText = 'Coming soon on iOS';
+            hintEl.innerHTML = 'Available now on <a id="manual-link" href="' + ANDROID_URL + '">Google Play</a>.';
+            if (typeof gtag === 'function') {
+                gtag('event', 'store_coming_soon', {
+                    'app_name': 'Sacred Sutra',
+                    'platform': 'iOS',
+                    'transport_type': 'beacon'
+                });
+            }
+        }
 
-        if (typeof gtag === 'function') {
-            gtag('event', 'store_redirect', {
-                'app_name': 'Sacred Sutra',
-                'platform': platform,
-                'target_url': targetUrl,
-                'transport_type': 'beacon'
+        function redirectTo(url) {
+            manualLink.href = url;
+            statusEl.innerText = 'Opening ' + platform + ' Store...';
+            trackRedirect(url);
+            setTimeout(function() {
+                window.location.replace(url);
+            }, 1500);
+        }
+
+        if (platform !== 'iOS') {
+            redirectTo(targetUrl);
+            return;
+        }
+
+        statusEl.innerText = 'Checking App Store...';
+        fetch('https://itunes.apple.com/lookup?id=' + IOS_APP_ID)
+            .then(function(res) { return res.json(); })
+            .then(function(data) {
+                if (data && data.resultCount > 0) {
+                    redirectTo(IOS_URL);
+                } else {
+                    showComingSoon();
+                }
+            })
+            .catch(function() {
+                // If lookup fails, still try the store URL
+                redirectTo(IOS_URL);
             });
-        }
-
-        setTimeout(function() {
-            window.location.replace(targetUrl);
-        }, 1500);
     })();
 </script>
 </body>
