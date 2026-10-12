@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campfire Habits — Consistency habits with friends</title>
+    <meta name="description"
+        content="Campfire Habits helps you build habits with consistency scores, a calm campfire home screen, and optional circles that sync quietly through your Google Drive.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --flame: #ff8c3a;
+            --flame-dim: #e85d2a;
+            --bg: #0f0d14;
+            --surface: #1a1625;
+            --text: #f5f0e8;
+            --muted: #a8a29a;
+            --border: rgba(255, 140, 60, 0.22);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Outfit', -apple-system, sans-serif;
+            margin: 0;
+            color: var(--text);
+            background:
+                radial-gradient(ellipse 70% 45% at 50% -5%, rgba(255, 140, 60, 0.15), transparent 55%),
+                var(--bg);
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 4.5rem 1.5rem 3rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            width: 96px;
+            height: 96px;
+            border-radius: 22%;
+            margin-bottom: 1.25rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        header .tagline {
+            color: var(--muted);
+            font-size: 1.15rem;
+            margin: 0.75rem auto 0;
+            max-width: 520px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4rem;
+        }
+
+        .stores {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.85rem 1.5rem;
+            border-radius: 999px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.15s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--flame), var(--flame-dim));
+            color: #1a0f08;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--border);
+            color: var(--text);
+        }
+
+        .btn:hover { transform: translateY(-1px); }
+
+        .grid {
+            display: grid;
+            gap: 1.25rem;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            margin-top: 2.5rem;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+        }
+
+        .card h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1.1rem;
+            color: var(--flame);
+        }
+
+        .card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+        }
+
+        footer a { color: var(--flame); text-decoration: none; }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../campfirehabits.png" alt="Campfire Habits" class="logo" width="96" height="96">
+        <h1>Campfire Habits</h1>
+        <p class="tagline">Keep the fire burning — consistency over streaks, with optional circles that glow together.</p>
+        <div class="stores">
+            <a class="btn btn-primary"
+                href="https://play.google.com/store/apps/details?id=com.campfirehabits.app"
+                target="_blank" rel="noopener">Get it on Google Play</a>
+            <a class="btn btn-outline" href="../campfirehabits.html">Quick download link</a>
+        </div>
+        <p style="color: var(--muted); font-size: 0.9rem;">iOS — coming soon</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <h3>Local-first habits</h3>
+                <p>Log in two taps. Your data lives on your device; optional Google Drive backup stays in your account.</p>
+            </div>
+            <div class="card">
+                <h3>Consistency, not shame</h3>
+                <p>Rolling consistency scores and heatmaps — no reset-to-zero streak anxiety.</p>
+            </div>
+            <div class="card">
+                <h3>Campfire circles</h3>
+                <p>Invite friends with a link or QR. Sync quietly through a shared Drive folder you control.</p>
+            </div>
+            <div class="card">
+                <h3>Private by default</h3>
+                <p>Keep habits personal, or link only what you want friends to see — no social feed.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            · <a href="mailto:digish.pandya@gmail.com">digish.pandya@gmail.com</a>
+        </p>
+        <p>Circle invites open via <a href="link.html">unified link</a> (install app, then tap again to join).</p>
+    </footer>
+</body>
+
+</html>
