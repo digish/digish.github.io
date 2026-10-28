@@ -11,8 +11,7 @@ Visit: [Your GitHub Pages URL will be here]
 ### Swar Meter
 Advanced yet simple app for musical notes visualization. A super simple tuner designed for music enthusiasts.
 
-- **Android**: [Google Play Store](https://play.google.com/store/apps/details?id=org.komal.SwarMeter)
-- **iOS**: [App Store](https://apps.apple.com/us/app/swarmeter/id6756004078) (In Review)
+- **Swar Meter**: [Get the app](https://digish.github.io/project/swarmeter.html) (iOS & Android)
 
 ### Shrimad Bhagvad Gita
 Search, Listen, Read - Your spiritual companion for daily study and spiritual growth.

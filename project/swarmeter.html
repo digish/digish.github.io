@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary Meta Tags -->
+<title>SwarMeter - App Download</title>
+<meta name="title" content="SwarMeter - Download Now">
+<meta name="description" content="SwarMeter — real-time swara tuning and pitch graphs for Indian classical music. Download on iOS and Android.">
+
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://digish.github.io/project/swarmeter.html">
+<meta property="og:title" content="SwarMeter">
+<meta property="og:description" content="Master your swaras with live pitch detection. Click to download for your device.">
+<meta property="og:image" content="https://digish.github.io/project/images/swarmeter.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://digish.github.io/project/swarmeter.html">
+<meta property="twitter:title" content="SwarMeter">
+<meta property="twitter:description" content="Download SwarMeter on iOS and Android.">
+<meta property="twitter:image" content="https://digish.github.io/project/images/swarmeter.png">
+
+<!-- GA4: add your SwarMeter measurement ID here when ready
+<script async src="https://www.googletagmanager.com/gtag/js?id=MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'MEASUREMENT_ID');
+</script>
+-->
+
+<style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #5E35B1 0%, #7E57C2 45%, #FFB300 100%);
+            text-align: center;
+            color: #fff;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+            max-width: 320px;
+            width: 90%;
+        }
+        .app-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 22%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+        }
+        .loader {
+            border: 3px solid rgba(255,255,255,0.3);
+            border-top: 3px solid #fff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px auto;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        a { color: #fff; text-decoration: underline; font-weight: bold; }
+        h2 { font-size: 1.4rem; margin: 10px 0; text-shadow: 0 2px 4px rgba(0,0,0,0.15); }
+        .detail-link {
+            display: inline-block;
+            margin-top: 16px;
+            font-size: 0.85rem;
+            opacity: 0.95;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://digish.github.io/project/images/swarmeter.png" alt="SwarMeter Logo" class="app-logo">
+
+        <div class="loader" id="loader"></div>
+        <h2 id="status">Opening App Store...</h2>
+        <p id="hint" style="font-size: 0.9rem; opacity: 0.9;">
+            Not moving? <a id="manual-link" href="#">Click here</a>.
+        </p>
+        <a class="detail-link" href="https://digish.github.io/project/swarmeter/index.html">App features &amp; guide</a>
+    </div>
+
+<script>
+    (function() {
+        const IOS_APP_ID = "6756004078";
+        const IOS_URL = "https://apps.apple.com/us/app/swarmeter/id" + IOS_APP_ID;
+        const ANDROID_URL = "https://play.google.com/store/apps/details?id=org.komal.swarmeter.plus&pcampaignid=web_share";
+        const FALLBACK_URL = ANDROID_URL;
+
+        const statusEl = document.getElementById('status');
+        const hintEl = document.getElementById('hint');
+        const loaderEl = document.getElementById('loader');
+        const manualLink = document.getElementById('manual-link');
+
+        const ua = navigator.userAgent || navigator.vendor || window.opera;
+        let targetUrl = FALLBACK_URL;
+        let platform = "Desktop";
+
+        if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+            targetUrl = IOS_URL;
+            platform = "iOS";
+        } else if (/android/i.test(ua)) {
+            targetUrl = ANDROID_URL;
+            platform = "Android";
+        }
+
+        manualLink.href = targetUrl;
+
+        function trackRedirect(url) {
+            if (typeof gtag === 'function') {
+                gtag('event', 'store_redirect', {
+                    'app_name': 'SwarMeter',
+                    'platform': platform,
+                    'target_url': url,
+                    'transport_type': 'beacon'
+                });
+            }
+        }
+
+        function redirectTo(url) {
+            manualLink.href = url;
+            statusEl.innerText = platform === 'Desktop'
+                ? 'Opening download page...'
+                : 'Opening ' + platform + ' Store...';
+            trackRedirect(url);
+            setTimeout(function() {
+                window.location.replace(url);
+            }, 1500);
+        }
+
+        if (platform === 'Desktop') {
+            statusEl.innerText = 'Choose your store below';
+            loaderEl.style.display = 'none';
+            hintEl.innerHTML =
+                '<a href="' + ANDROID_URL + '">Google Play</a> · ' +
+                '<a href="' + IOS_URL + '">App Store</a>';
+            return;
+        }
+
+        redirectTo(targetUrl);
+    })();
+</script>
+</body>
+</html>

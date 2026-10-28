@@ -114,8 +114,7 @@ Edit `docs/styles.css` CSS variables:
 
 - **Detailed Deployment Guide:** [docs/DEPLOYMENT.md](DEPLOYMENT.md)
 - **Project README:** [docs/README.md](README.md)
-- **Swar Meter on Play Store:** https://play.google.com/store/apps/details?id=org.komal.SwarMeter
-- **Swar Meter on App Store:** https://apps.apple.com/us/app/swarmeter/id6756004078
+- **Swar Meter on iOS & Android:** https://digish.github.io/project/swarmeter.html
 - **Bhagvad Gita on Play Store:** https://play.google.com/store/apps/details?id=org.komal.bhagvadgeeta
 
 ## 💡 Tips
