@@ -6,6 +6,7 @@ Live base: `https://digish.github.io/project/campfirehabits/`
 |------|-----|
 | Marketing | `/project/campfirehabits/` (`index.html`) |
 | Privacy | `/project/campfirehabits/privacy-policy.html` |
+| Terms of Service | `/project/campfirehabits/terms-of-service.html` |
 | Circle join (smart link) | `/project/campfirehabits/link.html?id=…&key=…&folder=…&presets=…` |
 | Store / download shortcut | `/project/campfirehabits.html` |
 
